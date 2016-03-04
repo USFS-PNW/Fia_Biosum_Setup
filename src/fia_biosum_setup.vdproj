@@ -16,7 +16,19 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_010F15093F7C4C3E8A3F4364FD3672A5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_057B1E5C4C6C45B7956B179F2ADC6034"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0C08A43EF78E40EEAED08E3D1B3733C0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -48,12 +60,6 @@
         {
         "MsmKey" = "8:_0CADC6798EAAE7F5DC00746851BA89A4"
         "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0CB16CBA3E424391A62585FDABFBFA87"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,7 +106,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_28864C22AD7E468098CF2B4ACA4A6541"
+        "MsmKey" = "8:_2B32A3BBAAC5441D9FD462AD4156DF80"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -118,7 +124,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_3A288AF3B331415FAF4ED796A601378C"
+        "MsmKey" = "8:_410EC8D247E84F0ABB70B8A0229F4A8E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -130,14 +136,20 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_6BA0E4A83CB74813BD6F6D6136C2FC2D"
+        "MsmKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7757E8E146F341D4B02A865D2F172958"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmKey" = "8:_7A2B91BCCEE740218882709A0883C0D5"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -150,12 +162,6 @@
         {
         "MsmKey" = "8:_808FC14988209C950A3495D3F504068D"
         "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8F97F01ACDD4400EA20A7026EA50329F"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,13 +196,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_95E5C162E2C7411A8BCED5DA937755DE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_9A89E230A16948A6BF0347F5DBCB6521"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_9C99CA073EC54EBEA43CAB1D7F70BDBF"
+        "MsmKey" = "8:_9D44826996EA45CD8B3688FF57EA96F4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -226,12 +238,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B1A2704B82EA47B9A9CD7A07BAB02756"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_B550CBA4435425E92CB0301E75040EC2"
         "OwnerKey" = "8:_22958A01666F8742364BC7AC836CBA84"
         "MsmSig" = "8:_UNDEFINED"
@@ -239,12 +245,6 @@
         "Entry"
         {
         "MsmKey" = "8:_BAE7CA341F3D47F2BA4D106B2EA38E24"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BCA587BF77E043679923FE08EC8F1254"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -280,12 +280,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_D51B37B64C944427A5AEFF02F83859A6"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_D6AFABDCF49640EDA713F92696F1CAA5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -311,6 +305,12 @@
         "Entry"
         {
         "MsmKey" = "8:_FA4710560CFA473185D26DDCC1BC4993"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FC8FFDC706E54C3EAD2960A7BEC16FCB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -406,7 +406,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_v403.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta555.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -495,7 +495,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.21022                                        "
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.0"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=9832"
                 "SupportedRuntimes" = "8:1.1.4322"
@@ -504,10 +504,50 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_010F15093F7C4C3E8A3F4364FD3672A5"
+            {
+            "SourcePath" = "8:..\\db\\ref_fvscommands.mdb"
+            "TargetName" = "8:ref_fvscommands.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_057B1E5C4C6C45B7956B179F2ADC6034"
             {
             "SourcePath" = "8:..\\db\\FVSin.mdb"
             "TargetName" = "8:FVSin.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0C08A43EF78E40EEAED08E3D1B3733C0"
+            {
+            "SourcePath" = "8:..\\db\\shared_project_links_and_notes.mdb"
+            "TargetName" = "8:shared_project_links_and_notes.mdb"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
@@ -553,26 +593,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0CB16CBA3E424391A62585FDABFBFA87"
-            {
-            "SourcePath" = "8:..\\fia_biosum_manager\\bin\\Release\\db\\scenario.mdb"
-            "TargetName" = "8:scenario.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_13A259E5877504DE4D31B54899EED8E9"
@@ -657,10 +677,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_28864C22AD7E468098CF2B4ACA4A6541"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2B32A3BBAAC5441D9FD462AD4156DF80"
             {
-            "SourcePath" = "8:..\\fia_biosum_manager\\bin\\Release\\db\\scenario_results.mdb"
-            "TargetName" = "8:scenario_results.mdb"
+            "SourcePath" = "8:..\\db\\utils.mdb"
+            "TargetName" = "8:utils.mdb"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
@@ -728,10 +748,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3A288AF3B331415FAF4ED796A601378C"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_410EC8D247E84F0ABB70B8A0229F4A8E"
             {
-            "SourcePath" = "8:..\\fia_biosum_manager\\bin\\Release\\db\\ref_master.mdb"
-            "TargetName" = "8:ref_master.mdb"
+            "SourcePath" = "8:..\\db\\treesample.mdb"
+            "TargetName" = "8:treesample.mdb"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
@@ -752,26 +772,6 @@
             {
             "SourcePath" = "8:..\\db\\print_report_wizard_detail_summary.xsd"
             "TargetName" = "8:print_report_wizard_detail_summary.xsd"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6BA0E4A83CB74813BD6F6D6136C2FC2D"
-            {
-            "SourcePath" = "8:..\\fia_biosum_manager\\bin\\Release\\db\\shared_project_links_and_notes.mdb"
-            "TargetName" = "8:shared_project_links_and_notes.mdb"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
@@ -819,11 +819,51 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7757E8E146F341D4B02A865D2F172958"
+            {
+            "SourcePath" = "8:..\\db\\scenario_results.mdb"
+            "TargetName" = "8:scenario_results.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7A2B91BCCEE740218882709A0883C0D5"
+            {
+            "SourcePath" = "8:..\\db\\ref_master.mdb"
+            "TargetName" = "8:ref_master.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_80751EBF800244FAE4DE3DD50EB51C14"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.5906.25132, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.5907.25370, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_80751EBF800244FAE4DE3DD50EB51C14"
@@ -881,26 +921,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8F97F01ACDD4400EA20A7026EA50329F"
-            {
-            "SourcePath" = "8:..\\fia_biosum_manager\\bin\\Release\\db\\ref_fvscommands.mdb"
-            "TargetName" = "8:ref_fvscommands.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9318C2C3498465BD255E6DE4E4F2338A"
             {
             "AssemblyRegister" = "3:1"
@@ -952,6 +972,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_95E5C162E2C7411A8BCED5DA937755DE"
+            {
+            "SourcePath" = "8:..\\opcost\\6_2_2.R"
+            "TargetName" = "8:6_2_2.R"
+            "Tag" = "8:"
+            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9A89E230A16948A6BF0347F5DBCB6521"
             {
             "SourcePath" = "8:..\\db\\personal_project_links_and_notes.mdb"
@@ -972,12 +1012,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9C99CA073EC54EBEA43CAB1D7F70BDBF"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9D44826996EA45CD8B3688FF57EA96F4"
             {
-            "SourcePath" = "8:..\\opcost\\OpCost.R"
-            "TargetName" = "8:OpCost.R"
+            "SourcePath" = "8:..\\..\\Fia-Biosum-Manager\\src\\SCRIPT_VB_PREDISPOSE_FIXTREEID.txt"
+            "TargetName" = "8:SCRIPT_VB_PREDISPOSE_FIXTREEID.txt"
             "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
+            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1063,26 +1103,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B1A2704B82EA47B9A9CD7A07BAB02756"
-            {
-            "SourcePath" = "8:..\\fia_biosum_manager\\SCRIPT_VB_PREDISPOSE_FIXTREEID.txt"
-            "TargetName" = "8:SCRIPT_VB_PREDISPOSE_FIXTREEID.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B550CBA4435425E92CB0301E75040EC2"
             {
             "SourcePath" = "8:ACEDAO.DLL"
@@ -1107,26 +1127,6 @@
             {
             "SourcePath" = "8:..\\db\\FVSout.mdb"
             "TargetName" = "8:FVSout.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BCA587BF77E043679923FE08EC8F1254"
-            {
-            "SourcePath" = "8:..\\fia_biosum_manager\\bin\\Release\\db\\utils.mdb"
-            "TargetName" = "8:utils.mdb"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
@@ -1234,26 +1234,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D51B37B64C944427A5AEFF02F83859A6"
-            {
-            "SourcePath" = "8:..\\fia_biosum_manager\\bin\\Release\\db\\treesample.mdb"
-            "TargetName" = "8:treesample.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D6AFABDCF49640EDA713F92696F1CAA5"
             {
             "SourcePath" = "8:..\\db\\FRCS.xls"
@@ -1290,7 +1270,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:4"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -1341,7 +1321,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -1361,6 +1341,26 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:4"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC8FFDC706E54C3EAD2960A7BEC16FCB"
+            {
+            "SourcePath" = "8:..\\db\\scenario.mdb"
+            "TargetName" = "8:scenario.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
@@ -1475,20 +1475,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.5.4"
-        "ProductCode" = "8:{12EE97BB-28ED-408C-8F71-189B00198D3E}"
-        "PackageCode" = "8:{9D5A0B04-4FFF-423B-AE23-B661FCB3F1BA}"
+        "ProductName" = "8:FIA Biosum 5.5.5"
+        "ProductCode" = "8:{6F4A872B-9B86-4E11-BD0B-73E244057E68}"
+        "PackageCode" = "8:{E8F4AB5E-B319-456A-9DAB-FB9010CD0028}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.5.4"
+        "ProductVersion" = "8:5.5.5"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:(503)808-2079"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.5.4"
+        "Title" = "8:FIA Biosum Setup 5.5.5"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Larry Potts"
         "Keywords" = "8:"
@@ -1599,13 +1599,13 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.5.4"
+            "Name" = "8:FIA Biosum Manager 5.5.5"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:"
+            "Target" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
             "Folder" = "8:_0D1818CEF5354BF084619C92ED1FDD2E"
             "WorkingFolder" = "8:_285A021D2BF44279BC5777E48A566ED9"
             "Icon" = "8:"
@@ -1619,7 +1619,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:"
+            "Target" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
             "Folder" = "8:_6A3C4CAF1130408EA0B158D0DE49A416"
             "WorkingFolder" = "8:_285A021D2BF44279BC5777E48A566ED9"
             "Icon" = "8:"
