@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="print_report_wizard" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="print_report_wizard_user_select" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="report_title">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="report_fields">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="field_name" type="xs:string" minOccurs="0" />
+              <xs:element name="LargestString" type="xs:string" minOccurs="0" />
+              <xs:element name="group" type="xs:boolean" minOccurs="0" />
+              <xs:element name="sort"  type="xs:boolean" minOccurs="0" />
+              <xs:element name="sortorder"  type="xs:string" minOccurs="0" />
+              <xs:element name="datatype"  type="xs:string" minOccurs="0" />
+              <xs:element name="stringdatatype_YN"  type="xs:string" minOccurs="0" />
+              <xs:element name="candomath"  type="xs:boolean" minOccurs="0" />
+              <xs:element name="value"  type="xs:string" minOccurs="0" />
+              <xs:element name="sum" type="xs:boolean" minOccurs="0" />
+              <xs:element name="avg_sum" type="xs:boolean" minOccurs="0" />
+              <xs:element name="max" type="xs:boolean" minOccurs="0" />
+              <xs:element name="min" type="xs:boolean" minOccurs="0" />
+              <xs:element name="count" type="xs:boolean" minOccurs="0" />
+              <xs:element name="pct_count" type="xs:boolean" minOccurs="0" />
+              <xs:element name="XPos" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="report_results">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="results_type" type="xs:string" minOccurs="0" />
+              <xs:element name="group_field1_value" type="xs:string" minOccurs="0" />
+              <xs:element name="group_field2_value" type="xs:string" minOccurs="0" />
+              <xs:element name="group_field3_value" type="xs:string" minOccurs="0" />
+              <xs:element name="field_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sum_group_summary_total" type="xs:double" minOccurs="0" />
+              <xs:element name="avg_sum_group_summary_total" type="xs:double" minOccurs="0" />
+              <xs:element name="min_group_summary" type="xs:double" minOccurs="0" />
+              <xs:element name="max_group_summary" type="xs:double" minOccurs="0" />
+              <xs:element name="count_group_summary_total" type="xs:int" minOccurs="0" />
+              <xs:element name="pct_count_group_summary_total" type="xs:double" minOccurs="0" />
+              <xs:element name="count_group_summary_record_total" type="xs:int" minOccurs="0" />              
+              <xs:element name="pct_group_summary_record_total" type="xs:double" minOccurs="0" />    
+              <xs:element name="sum_report_summary_total" type="xs:double" minOccurs="0" />
+              <xs:element name="avg_sum_report_summary_total" type="xs:double" minOccurs="0" />                        
+              <xs:element name="min_report_summary" type="xs:double" minOccurs="0" />
+              <xs:element name="max_report_summary" type="xs:double" minOccurs="0" />
+              <xs:element name="count_report_summary_total" type="xs:int" minOccurs="0" />
+              <xs:element name="pct_count_report_summary_total" type="xs:double" minOccurs="0" />
+              <xs:element name="count_report_summary_record_total" type="xs:int" minOccurs="0" />              
+              <xs:element name="pct_report_summary_record_total" type="xs:double" minOccurs="0" />
+              <xs:element name="min_init" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detail_summary_user_options">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="field_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sum" type="xs:boolean" minOccurs="0" />
+              <xs:element name="avg_sum" type="xs:boolean" minOccurs="0" />
+              <xs:element name="count" type="xs:boolean" minOccurs="0" />
+              <xs:element name="pct_count" type="xs:boolean" minOccurs="0" />
+              <xs:element name="max" type="xs:boolean" minOccurs="0" />
+              <xs:element name="min" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="printpreview">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="printpreview_yn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="record_layout">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type" type="xs:string" minOccurs="0" />
+              <xs:element name="group_YN" type="xs:string" minOccurs="0" />
+              <xs:element name="print_detail_line_YN" type="xs:string" minOccurs="0" />
+              <xs:element name="count_group_records_YN" type="xs:string" minOccurs="0" />
+              <xs:element name="pct_count_group_records_YN" type="xs:string" minOccurs="0" />
+              <xs:element name="print_group_summary_YN" type="xs:string" minOccurs="0" />
+              <xs:element name="print_report_totals_YN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="orientation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
