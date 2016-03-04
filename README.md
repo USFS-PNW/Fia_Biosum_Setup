@@ -1,2 +1,2 @@
-# fia_biosum_setup
+# Fia_Biosum_Setup
 Biosum deployment project
