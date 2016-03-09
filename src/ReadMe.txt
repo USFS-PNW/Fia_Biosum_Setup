@@ -1,3 +1,4 @@
+### FULL INSTALLATION PACKAGE ###
 This project contains the configuration to build an installer (.msi) file
 for the FIA Biosum Manager. In practice, this installer is distributed in
 a self-extracting WinZip file that also includes the following required
@@ -10,3 +11,14 @@ components:
 
 Please consult the Biosum_Setup_Instructions in the docs directory for 
 further details.
+
+### UPDATING THE VERSION NUMBER ###
+When the version number is changed, it needs to be changed in the following files:
+
+1. USFS-PNW/Fia_Biosum_Setup Deployment Project Properties
+2. USFS-PNW/Fia_Biosum_Setup File system editor\User's Desktop shortcut name
+3. USFS-PNW/Fia_Biosum_Setup File system editor\User's Programs Menu\FIA Biosum shortcut name
+4. USFS-PNW/Fia-Biosum-Manager src\frmAbout
+5. USFS-PNW/Fia-Biosum-Manager src\frmMain g_strAppVer variable
+6. USFS-PNW/Fia-Biosum-Manager src\version_control.cs PerformVersionCheck function to show 
+   which database versions are compatible with the new application version 

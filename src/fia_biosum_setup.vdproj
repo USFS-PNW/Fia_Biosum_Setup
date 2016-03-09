@@ -190,12 +190,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A24124B0E151425EAC0DC0B2AF0446C0"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -286,14 +280,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EF3967812C28E91DD022458518ABAD8E"
-        "OwnerKey" = "8:_F29283C18DD83B86022914349992A6A5"
+        "MsmKey" = "8:_E2764179E2B34A5EB64C929A91E4F922"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F0182DAD26004967B0C70067C582EE70"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_EF3967812C28E91DD022458518ABAD8E"
+        "OwnerKey" = "8:_F29283C18DD83B86022914349992A6A5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -425,10 +419,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    "Name" = "8:Microsoft .NET Framework 4 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0"
                     }
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
                     {
@@ -863,7 +857,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.5907.25370, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.5911.27454, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_80751EBF800244FAE4DE3DD50EB51C14"
@@ -985,26 +979,6 @@
             {
             "SourcePath" = "8:..\\..\\Fia-Biosum-Manager\\src\\SCRIPT_VB_PREDISPOSE_FIXTREEID.txt"
             "TargetName" = "8:SCRIPT_VB_PREDISPOSE_FIXTREEID.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A24124B0E151425EAC0DC0B2AF0446C0"
-            {
-            "SourcePath" = "8:..\\..\\Fia-Biosum-Manager\\src\\bin\\Debug\\FIA_Biosum_Manager.exe.config"
-            "TargetName" = "8:FIA_Biosum_Manager.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
             "Condition" = "8:"
@@ -1159,7 +1133,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -1254,6 +1228,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E2764179E2B34A5EB64C929A91E4F922"
+            {
+            "SourcePath" = "8:..\\..\\Fcs-Class-Library\\src\\bin\\Debug\\FcsClassLibrary.dll.config"
+            "TargetName" = "8:FcsClassLibrary.dll.config"
+            "Tag" = "8:"
+            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EF3967812C28E91DD022458518ABAD8E"
             {
             "SourcePath" = "8:ieframe.dll"
@@ -1272,26 +1266,6 @@
             "Register" = "3:4"
             "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F0182DAD26004967B0C70067C582EE70"
-            {
-            "SourcePath" = "8:..\\..\\Fcs-Class-Library\\src\\bin\\Debug\\FcsClassLibrary.dll.config"
-            "TargetName" = "8:FcsClassLibrary.dll.config"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F29283C18DD83B86022914349992A6A5"
@@ -1477,7 +1451,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.5.5"
         "ProductCode" = "8:{6F4A872B-9B86-4E11-BD0B-73E244057E68}"
-        "PackageCode" = "8:{8C01163E-86E0-4EFB-B02A-44F83CB173C4}"
+        "PackageCode" = "8:{81B8D1E6-4255-40D1-A7BC-6D8615C0F5F7}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
