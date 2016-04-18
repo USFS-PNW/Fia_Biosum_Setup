@@ -1,6 +1,7 @@
 #####Initial package loading
 library(RODBC)
-###Load Data
+
+####Load Data
 
 
 args=(commandArgs(TRUE))
@@ -15,6 +16,11 @@ print("M data.frame:OK")
 m3<-data.frame(row.names=c("fellerBuncher","forwarder","harvester","grappleSkidderLarge",
                            "cableSkidderLarge","wheelFellerBuncher","crawlerFellerBuncher","yarder","slideboom","chainsaw","chipper","helicopter"),values=c(210.10,170.00,180.00,110.00,149.80,205.10,185.60,299.00,200.00,90.00,100.00,600))
 print("m3 data.frame:OK")
+## Edit idealTable and chipTable: 1 creates or updates the ideal table and 2 does not.
+
+idealTable<-1
+
+chipTable<-1
 
 #####Run Data
 
@@ -89,12 +95,12 @@ twitchVol<-function(m){ifelse(m$Harvesting.System=="Ground-Based CTL"|
                                 m$Harvesting.System=="Helicopter CTL"|
                                 m$Harvesting.System=="Cable CTL",twitchVol3(m),ifelse(
                                   m$Harvesting.System=="Cable Manual WT"|
-    m$Harvesting.System=="Ground-Based Man WT"|
-    m$Harvesting.System=="Ground-Based Mech WT"|
-    m$Harvesting.System=="Cable Manual WT/Log"|
-    m$Harvesting.System=="Cable Manual Log"|
-    m$Harvesting.System=="Ground-Based Manual Log"|
-    m$Harvesting.System=="Helicopter Manual WT",twitchVol2(m),NaN))}
+                                    m$Harvesting.System=="Ground-Based Man WT"|
+                                    m$Harvesting.System=="Ground-Based Mech WT"|
+                                    m$Harvesting.System=="Cable Manual WT/Log"|
+                                    m$Harvesting.System=="Cable Manual Log"|
+                                    m$Harvesting.System=="Ground-Based Manual Log"|
+                                    m$Harvesting.System=="Helicopter Manual WT",twitchVol2(m),NaN))}
 
 twitchVolM<-function(m){
   twitchVol(m)*0.0283168
@@ -892,7 +898,7 @@ idealGround<-function(m){
 
 labelEq2<-function(m,p){
   ifelse(m$Percent.Slope>45,ifelse(
-    m$One.way.Yarding.Distance>2000, ifelse(
+    m$One.way.Yarding.Distance>8000, ifelse(
       heliHarEst(m,m3)<heliSawEst(m,m3),heliHarEst(m,m3),heliSawEst(m,m3)),ifelse(
         m$"Harvesting.System"=="Cable Manual WT"|m$"Harvesting.System"=="Cable Manual WT/Log",ifelse(
           yarderEst(m,m3)<yarderSawEst(m,m3),yarderEst(m,m3),yarderSawEst(m,m3)),ifelse(
@@ -901,6 +907,19 @@ labelEq2<-function(m,p){
                 m$"Harvesting.System"=="Ground-Based CTL"|m$"Harvesting.System"=="Ground-Based Manual Log",ifelse(
                   harForEst(m,m3)<sawSkidEst(m,m3),harForEst(m,m3),sawSkidEst(m,m3)),ifelse(
                     harSkidEst(m,m3)<fbSkidEst(m,m3),harSkidEst(m,m3),fbSkidEst(m,m3))))
+}
+
+labelEq3<-function(m,p){
+  ifelse(m$Percent.Slope>45,ifelse(
+    m$One.way.Yarding.Distance>8000, ifelse(
+      heliHarEst(m,m3)<heliSawEst(m,m3),"Helicopter CTL","Helicopter Manual WT"),ifelse(
+        m$"Harvesting.System"=="Cable Manual WT"|m$"Harvesting.System"=="Cable Manual WT/Log",ifelse(
+          yarderEst(m,m3)<yarderSawEst(m,m3),"Cable Manual WT","Cable Manual WT/Log"),ifelse(
+            yarderSawLogEst(m,m3)<yarderHarEst(m,m3)&yarderSawEst(m,m3),"Cable Manual Log",ifelse(
+              yarderHarEst(m,m3)<yarderSawEst(m,m3),"Cable CTL","Cable Manual WT/Log")))),ifelse(
+                m$"Harvesting.System"=="Ground-Based CTL"|m$"Harvesting.System"=="Ground-Based Manual Log",ifelse(
+                  harForEst(m,m3)<sawSkidEst(m,m3),"Ground-Based CTL","Ground-Based Man WT"),ifelse(
+                    harSkidEst(m,m3)<fbSkidEst(m,m3),"Ground-Based CTL","Ground-Based Mech WT")))
 }
 
 mic<-function(x){
@@ -938,6 +957,20 @@ colnames(m7)<-c("stand", "rx_year", "harvest_cpa", "harvest_system", "RxPackage_
 
 exp2<-subset(m7, harvest_cpa<1 | harvest_cpa=="NaN" | harvest_cpa=="Inf")
 
+m16<-data.frame(m$"Stand", m$"YearCostCalc", labelEq3(m,m3), labelEq2(m,m3), ifelse(labelEq3(m,m3)==labelEq1(m),"TRUE","FALSE"))
+
+print("m16:OK")
+
+colnames(m16)<-c("stand", "rx_year", "harvest_system", "Harvest_CPA", "Matches Original System?")
+
+m17<-subset(m16, Harvest_CPA<1 | harvest_system=="<NA>")
+
+m22<-data.frame(m$"Stand",labelEq1(m),chipTime(m)*m3["chipper",])
+
+print("m22:OK")
+
+colnames(m22)<-c("stand","harvest_system","chip_cost")
+
 exp21<-data.frame(m[row.names(exp2),],exp2$harvest_cpa)
 
 exp20<-ifelse(exp21$exp2.harvest_cpa=="Inf" & exp21$One.way.Yarding.Distance==0, "Zeroed Yarding Distance",
@@ -949,6 +982,7 @@ exp20<-ifelse(exp21$exp2.harvest_cpa=="Inf" & exp21$One.way.Yarding.Distance==0,
                                                  ifelse(exp21$exp2.harvest_cpa<0 & exp21$Harvesting.System=="Helicopter CTL", "Insufficient Trees", "Oh Yay, a new one!")))))))
 
 exp22<-data.frame(exp2,exp20)
+
 
 colnames(exp22)<-c("stand", "rx_year", "harvest_cpa", "harvest_system", "error_message")
 
@@ -962,6 +996,10 @@ sqlSave(con, exp22, tablename="OpCost_err", append=TRUE)
 
 sqlSave(con, m10, tablename="OpCost_output", append=TRUE)
 
-print(m10)
+ifelse(idealTable==1,sqlSave(con, m16, tablename="OpCost_Ideal", append=TRUE),print("Ideal Table Not Created or Updated"))
+
+ifelse(chipTable==1,sqlSave(con, m22, tablename="OpCost_Chipping", append=TRUE),print("Chipping Table Not Created or Updated"))
+
+print("m10:OK")
 
 odbcCloseAll()
