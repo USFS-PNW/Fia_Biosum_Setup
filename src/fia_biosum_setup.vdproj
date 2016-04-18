@@ -400,7 +400,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta557.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta560.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -1394,7 +1394,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.5.7"
+        "ProductName" = "8:FIA Biosum 5.6.0"
         "ProductCode" = "8:{C2C68EB7-808E-44F3-9834-BFC11CBB47B3}"
         "PackageCode" = "8:{94E4577D-29BD-459A-ADD0-81FD08516CE6}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
@@ -1518,7 +1518,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.5.7"
+            "Name" = "8:FIA Biosum Manager 5.6.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1532,7 +1532,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.5.7"
+            "Name" = "8:FIA Biosum Manager 5.6.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
