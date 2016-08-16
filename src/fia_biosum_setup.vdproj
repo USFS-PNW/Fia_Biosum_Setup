@@ -35,7 +35,7 @@
         "Entry"
         {
         "MsmKey" = "8:_09F3C66E4F00484F9993488F7F429364"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
+        "OwnerKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -47,7 +47,7 @@
         "Entry"
         {
         "MsmKey" = "8:_09F3C66E4F00484F9993488F7F429364"
-        "OwnerKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -101,7 +101,7 @@
         "Entry"
         {
         "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -113,7 +113,7 @@
         "Entry"
         {
         "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -221,13 +221,7 @@
         "Entry"
         {
         "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
-        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
+        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -239,7 +233,13 @@
         "Entry"
         {
         "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
-        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
+        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -257,6 +257,12 @@
         "Entry"
         {
         "MsmKey" = "8:_BE554CE5E366427085DD080DC9C0BA9C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BE98FE7DF69941A0864B5630F2DCA541"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -310,12 +316,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E4DC4B6B89144161B5E35E74C8502432"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_EF3967812C28E91DD022458518ABAD8E"
         "OwnerKey" = "8:_F29283C18DD83B86022914349992A6A5"
         "MsmSig" = "8:_UNDEFINED"
@@ -353,67 +353,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_581317DC5BE7FF002617B3763037F640"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_80751EBF800244FAE4DE3DD50EB51C14"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_32E3C4B2C9CE172B59A55B836B976EA0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F29283C18DD83B86022914349992A6A5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_22958A01666F8742364BC7AC836CBA84"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
+        "OwnerKey" = "8:_09F3C66E4F00484F9993488F7F429364"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -425,7 +365,67 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_09F3C66E4F00484F9993488F7F429364"
+        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_22958A01666F8742364BC7AC836CBA84"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F29283C18DD83B86022914349992A6A5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_32E3C4B2C9CE172B59A55B836B976EA0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_80751EBF800244FAE4DE3DD50EB51C14"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_581317DC5BE7FF002617B3763037F640"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -436,7 +436,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta575.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta576.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -1148,6 +1148,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BE98FE7DF69941A0864B5630F2DCA541"
+            {
+            "SourcePath" = "8:..\\opcost\\7_1_2.R"
+            "TargetName" = "8:7_1_2.R"
+            "Tag" = "8:"
+            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BF019F04E83C769B1398EB00361D720A"
             {
             "AssemblyRegister" = "3:1"
@@ -1280,26 +1300,6 @@
             "TargetName" = "8:Help.xsd"
             "Tag" = "8:"
             "Folder" = "8:_A54E8310A5084C5DB8398B22E65D8183"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E4DC4B6B89144161B5E35E74C8502432"
-            {
-            "SourcePath" = "8:..\\opcost\\6_3_2.R"
-            "TargetName" = "8:6_3_2.R"
-            "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1541,20 +1541,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.7.5"
-        "ProductCode" = "8:{563E58B6-F9B1-4C4B-A04B-ECA7DF737709}"
-        "PackageCode" = "8:{9D8160E9-AE12-47A9-8577-329397C2E904}"
+        "ProductName" = "8:FIA Biosum 5.7.6"
+        "ProductCode" = "8:{E059B93C-69F2-4A68-A095-1BF5FD0BAA90}"
+        "PackageCode" = "8:{3FC95089-15BD-44E1-90B6-3DDFB9CBFEDA}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.7.5"
+        "ProductVersion" = "8:5.7.6"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:(503)808-2079"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.7.5"
+        "Title" = "8:FIA Biosum Setup 5.7.6"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Larry Potts"
         "Keywords" = "8:"
@@ -1665,7 +1665,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.7.5"
+            "Name" = "8:FIA Biosum Manager 5.7.6"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1679,7 +1679,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.7.5"
+            "Name" = "8:FIA Biosum Manager 5.7.6"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
