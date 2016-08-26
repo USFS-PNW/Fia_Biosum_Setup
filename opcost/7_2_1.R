@@ -3,7 +3,6 @@ library(RODBC)
 
 ####Load Data
 
-
 args=(commandArgs(TRUE))
 
 print(args)
@@ -762,47 +761,47 @@ highGroundCTLTime<-function(m){
 }
 
 yarderEst<-function(m,p){
-  (yarderTime(m)*p["yarder",])+(sawTime(m)*p["chainsaw",])+(slideTime(m)*p["slideboom",])+((chipTime(m)*.2)*p["chipper",])
+  rowSums(cbind((yarderTime(m)*p["yarder",]),(sawTime(m)*p["chainsaw",]),(slideTime(m)*p["slideboom",]),((chipTime(m)*.2)*p["chipper",])),na.rm = TRUE)
 }
 
 yarderSawEst<-function(m,p){
-  (yarderTime(m)*p["yarder",])+(sawTime(m)*p["chainsaw",])+(slideTime(m)*p["slideboom",])+((chipTime(m)*.15)*p["chipper",])
+  rowSums(cbind((yarderTime(m)*p["yarder",]),(sawTime(m)*p["chainsaw",]),(slideTime(m)*p["slideboom",]),((chipTime(m)*.15)*p["chipper",])),na.rm=TRUE)
 }
 
 sawSkidEst<-function(m,p){
-  (skidderTime(m)*p["grappleSkidderLarge",]+(sawTime(m)*p["chainsaw",])+(slideTime(m)*p["slideboom",]))+((chipTime(m)*.1)*p["chipper",])
+  rowSums(cbind(((skidderTime(m)*p["grappleSkidderLarge",])),(sawTime(m)*p["chainsaw",]),(slideTime(m)*p["slideboom",]),((chipTime(m)*.1)*p["chipper",])),na.rm = TRUE)
 }
 
 sawSkidLogEst<-function(m,p){
-  ((skidderTime(m)*p["grappleSkidderLarge",]*2.5)+(sawTime(m)*p["chainsaw",]*2.5)+(slideTime(m)*p["slideboom",]))+((chipTime(m)*.1)*p["chipper",])
+  rowSums(cbind((skidderTime(m)*p["grappleSkidderLarge",]*2.5),(sawTime(m)*p["chainsaw",]*2.5),(slideTime(m)*p["slideboom",]),((chipTime(m)*.1)*p["chipper",])),na.rm=TRUE)
 }
 
 harForEst<-function(m,p){
-  (((forTime(m)*.75)+2)*p["forwarder",])+((harTime(m)*p["harvester",])*5)+(slideTime(m)*p["slideboom",])+((chipTime(m)*.2)*p["chipper",])
+  rowSums(cbind((((forTime(m)*.75)+2)*p["forwarder",]),((harTime(m)*p["harvester",])*5),(slideTime(m)*p["slideboom",]),((chipTime(m)*.2)*p["chipper",])),na.rm = TRUE)
 }
 
 harSkidEst<-function(m,p){
-  (harTime(m)*p["harvester",])+(skidderTime(m)*p["grappleSkidderLarge",])+(slideTime(m)*p["slideboom",])+((chipTime(m)*.1)*p["chipper",])
+  rowSums(cbind((harTime(m)*p["harvester",]),(skidderTime(m)*p["grappleSkidderLarge",]),(slideTime(m)*p["slideboom",]),((chipTime(m)*.1)*p["chipper",])),na.rm = TRUE)
 }
 
 heliHarEst<-function(m,p){
-  (heliTime(m)*p["helicopter",])+(harTime(m)*p["harvester",])
+  rowSums(cbind((heliTime(m)*p["helicopter",]),(harTime(m)*p["harvester",])),na.rm = TRUE)
 }
 
 yarderHarEst<-function(m,p){
-  (yarderTime(m)*p["yarder",])+(harTime(m)*p["harvester",])+((chipTime(m)*.15)*p["chipper",])
+  rowSums(cbind((yarderTime(m)*p["yarder",]),(harTime(m)*p["harvester",]),((chipTime(m)*.15)*p["chipper",])),na.rm = TRUE)
 }
 
 fbSkidEst<-function(m,p){
-  (fbTime(m)*p["fellerBuncher",])+((skidderTime(m)*1.5*p["grappleSkidderLarge",])*1.3)+(slideTime(m)*p["slideboom",])+((chipTime(m)*.15)*p["chipper",])
+  rowSums(cbind((fbTime(m)*p["fellerBuncher",]),((skidderTime(m)*1.5*p["grappleSkidderLarge",])*1.3),(slideTime(m)*p["slideboom",]),((chipTime(m)*.15)*p["chipper",])),na.rm = TRUE)
 }
 
 yarderSawLogEst<-function(m,p){
-  (yarderTime(m)*p["yarder",])+(sawTime(m)*p["chainsaw",])+(slideTime(m)*p["slideboom",])+((chipTime(m)*.5)*p["chipper",])
+  rowSums(cbind((yarderTime(m)*p["yarder",]),(sawTime(m)*p["chainsaw",]),(slideTime(m)*p["slideboom",]),((chipTime(m)*.5)*p["chipper",])),na.rm = TRUE)
 }
 
 heliSawEst<-function(m,p){
-  (heliTime(m)*p["helicopter",])+(sawTime(m)*p["chainsaw",])
+  rowSums(cbind((heliTime(m)*p["helicopter",]),(sawTime(m)*p["chainsaw",])),na.rm = TRUE)
 }
 
 
@@ -1030,9 +1029,9 @@ sqlSave(con, m10, tablename="OpCost_output", append=TRUE)
 
 print("sqlSave:ok")
 
-ifelse(idealTable==1,sqlSave(con, m16, tablename="OpCost_Ideal", append=TRUE),print("Ideal Table Not Created or Updated"))
+##ifelse(idealTable==1,sqlSave(con, m16, tablename="OpCost_Ideal", append=TRUE),print("Ideal Table Not Created or Updated"))
 
-ifelse(chipTable==1,sqlSave(con, m22, tablename="OpCost_Chipping", append=TRUE),print("Chipping Table Not Created or Updated"))
+##ifelse(chipTable==1,sqlSave(con, m22, tablename="OpCost_Chipping", append=TRUE),print("Chipping Table Not Created or Updated"))
 
 print("m10:OK")
 
