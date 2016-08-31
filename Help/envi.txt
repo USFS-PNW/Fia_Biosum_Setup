@@ -1,8 +1,0 @@
-Edit ENVI Header->Edit Attributes->Class Info to change classes/colors but every time you do this it closes the file
-ArcMap can open ENVI or Erdas categorical rasters; Need to rebuild the attribute table
-Color slices display ArcMap categorical raster in ENVI
-
-Assigning spectral classes to informational classes
-http://faculty.wwu.edu/wallin/envr442/ENVI/442_unsup_class_ENVI.html#Step3
-
-I changed this file
