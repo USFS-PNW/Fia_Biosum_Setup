@@ -4,3 +4,5 @@ Color slices display ArcMap categorical raster in ENVI
 
 Assigning spectral classes to informational classes
 http://faculty.wwu.edu/wallin/envr442/ENVI/442_unsup_class_ENVI.html#Step3
+
+I changed this file
