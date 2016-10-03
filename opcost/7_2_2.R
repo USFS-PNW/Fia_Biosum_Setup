@@ -1029,9 +1029,9 @@ sqlSave(con, m10, tablename="OpCost_output", append=TRUE)
 
 print("sqlSave:ok")
 
-##ifelse(idealTable==1,sqlSave(con, m16, tablename="OpCost_Ideal", append=TRUE),print("Ideal Table Not Created or Updated"))
+ifelse(idealTable==1,sqlSave(con, m16, tablename="OpCost_Ideal", append=TRUE),print("Ideal Table Not Created or Updated"))
 
-##ifelse(chipTable==1,sqlSave(con, m22, tablename="OpCost_Chipping", append=TRUE),print("Chipping Table Not Created or Updated"))
+ifelse(chipTable==1,sqlSave(con, m22, tablename="OpCost_Chipping", append=TRUE),print("Chipping Table Not Created or Updated"))
 
 print("m10:OK")
 
