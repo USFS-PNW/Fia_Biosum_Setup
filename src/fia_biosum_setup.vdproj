@@ -136,6 +136,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3DA1DA77560A40E4BECC65FF8072E608"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_410EC8D247E84F0ABB70B8A0229F4A8E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -280,12 +286,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C5B0E3CEA81B44CD9B533C1830AE2818"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C785767EBD914C6EA94C33580FBEA83B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -293,18 +293,6 @@
         "Entry"
         {
         "MsmKey" = "8:_CE4023BE4DA7424C8A5851FF3E569F83"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D6AFABDCF49640EDA713F92696F1CAA5"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D994835FAEB64932A1EFFA276D90985E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -809,11 +797,6 @@
             "AssemblyAsmDisplayName" = "8:ProgressBarBasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_32E3C4B2C9CE172B59A55B836B976EA0"
-                    {
-                    "Name" = "8:ProgressBarBasic.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ProgressBarBasic.dll"
             "TargetName" = "8:"
@@ -831,6 +814,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3DA1DA77560A40E4BECC65FF8072E608"
+            {
+            "SourcePath" = "8:..\\Help\\FVS_Help.xps"
+            "TargetName" = "8:FVS_Help.xps"
+            "Tag" = "8:"
+            "Folder" = "8:_A54E8310A5084C5DB8398B22E65D8183"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_410EC8D247E84F0ABB70B8A0229F4A8E"
@@ -860,11 +863,6 @@
             "AssemblyAsmDisplayName" = "8:StandByAnimation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_581317DC5BE7FF002617B3763037F640"
-                    {
-                    "Name" = "8:StandByAnimation.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:StandByAnimation.dll"
             "TargetName" = "8:"
@@ -911,11 +909,6 @@
             "AssemblyAsmDisplayName" = "8:FIADBOracleServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_6C701828D9345E2F1B2B77FA1F4E65C3"
-                    {
-                    "Name" = "8:FIADBOracleServices.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:FIADBOracleServices.dll"
             "TargetName" = "8:"
@@ -979,14 +972,9 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.6268.24447, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.6283.25585, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_80751EBF800244FAE4DE3DD50EB51C14"
-                    {
-                    "Name" = "8:ProgressBarEx.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ProgressBarEx.dll"
             "TargetName" = "8:"
@@ -1226,11 +1214,6 @@
             "AssemblyAsmDisplayName" = "8:FcsClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_BF019F04E83C769B1398EB00361D720A"
-                    {
-                    "Name" = "8:FcsClassLibrary.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:FcsClassLibrary.dll"
             "TargetName" = "8:"
@@ -1248,26 +1231,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5B0E3CEA81B44CD9B533C1830AE2818"
-            {
-            "SourcePath" = "8:..\\db\\frcs.version"
-            "TargetName" = "8:frcs.version"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C785767EBD914C6EA94C33580FBEA83B"
@@ -1296,46 +1259,6 @@
             "TargetName" = "8:FIADBOracleServices.dll.config"
             "Tag" = "8:"
             "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D6AFABDCF49640EDA713F92696F1CAA5"
-            {
-            "SourcePath" = "8:..\\db\\FRCS.xls"
-            "TargetName" = "8:FRCS.xls"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D994835FAEB64932A1EFFA276D90985E"
-            {
-            "SourcePath" = "8:..\\opcost\\8_5_4.R"
-            "TargetName" = "8:8_5_4.R"
-            "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
