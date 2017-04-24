@@ -4,6 +4,7 @@ library(RODBC)
 ####Load Data
 
 
+
 args=(commandArgs(TRUE))
 
 print(args)
@@ -324,7 +325,7 @@ fisherSkid=function(m){
 ##Forwarder
 
 jirousekFor<-function(m){
-  -7.6881*log((m$"One.way.Yarding.Distance"*0.3048))+64.351
+  abs(-7.6881*log((m$"One.way.Yarding.Distance"*0.3048))+64.351)
 }
 
 boldingFor<-function(m){
@@ -580,7 +581,7 @@ hartsoughFBTime<-function(m){
 } ##Hours/Acre
 
 hartsoughSlideTime<-function(m){
-  if(m$Harvesting.System=="Cable Manual WT"||m$Harvesting.System=="Cable Manual WT/Log"||m$Harvesting.System=="Cable Manual Log"||m$Harvesting.System=="Ground-Based Manual WT"||m$Harvesting.System=="Cable CTL"){hartsoughSlide(m)*30}else{NA}
+  hartsoughSlide(m)*30
 } ##Hours/Acre
 
 suchomelSlideTime<-function(m){
