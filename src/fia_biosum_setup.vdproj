@@ -832,7 +832,7 @@
             "SourcePath" = "8:..\\db\\biosum_ref.accdb"
             "TargetName" = "8:biosum_ref.accdb"
             "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Folder" = "8:_08726AD11F5E4AED8A0E2BF53DA16AF7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1490,6 +1490,28 @@
             "Property" = "8:DesktopFolder"
                 "Folders"
                 {
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_208839559DC34AB182B9D4587FB8E498"
+            {
+            "Name" = "8:#1915"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:AppDataFolder"
+                "Folders"
+                {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_08726AD11F5E4AED8A0E2BF53DA16AF7"
+                    {
+                    "Name" = "8:FIABiosum"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_59C4A8C194A545B1BCAB30543293E12A"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_285A021D2BF44279BC5777E48A566ED9"
