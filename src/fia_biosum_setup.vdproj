@@ -41,7 +41,7 @@
         "Entry"
         {
         "MsmKey" = "8:_09F3C66E4F00484F9993488F7F429364"
-        "OwnerKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -53,7 +53,7 @@
         "Entry"
         {
         "MsmKey" = "8:_09F3C66E4F00484F9993488F7F429364"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
+        "OwnerKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -107,7 +107,7 @@
         "Entry"
         {
         "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -119,7 +119,7 @@
         "Entry"
         {
         "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -245,13 +245,7 @@
         "Entry"
         {
         "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
-        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
-        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -263,7 +257,13 @@
         "Entry"
         {
         "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
+        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
+        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -353,67 +353,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_09F3C66E4F00484F9993488F7F429364"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F29283C18DD83B86022914349992A6A5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_32E3C4B2C9CE172B59A55B836B976EA0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_80751EBF800244FAE4DE3DD50EB51C14"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_581317DC5BE7FF002617B3763037F640"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "OwnerKey" = "8:_917EC885E1D5E84AAE3F22CAD04DD27C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -425,7 +365,67 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_917EC885E1D5E84AAE3F22CAD04DD27C"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_581317DC5BE7FF002617B3763037F640"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_80751EBF800244FAE4DE3DD50EB51C14"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_32E3C4B2C9CE172B59A55B836B976EA0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F29283C18DD83B86022914349992A6A5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_808FC14988209C950A3495D3F504068D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_AFDCC06DD29BF6681966F4D4DF25211F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_09F3C66E4F00484F9993488F7F429364"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -436,7 +436,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta579.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta580.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -1546,20 +1546,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.7.9"
-        "ProductCode" = "8:{F6EE219A-AE24-40CF-B9EE-AE57C366AEFE}"
-        "PackageCode" = "8:{47B9955E-C40D-41FB-874E-2DDE71239CE4}"
+        "ProductName" = "8:FIA Biosum 5.8.0"
+        "ProductCode" = "8:{B493107B-0082-40D5-8849-11E11BEC0D9F}"
+        "PackageCode" = "8:{9564C8E9-8298-4A1D-BAAC-6C5FE1C0F590}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.7.9"
+        "ProductVersion" = "8:5.8.0"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:(503)808-2079"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.7.9"
+        "Title" = "8:FIA Biosum Setup 5.8.0"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Larry Potts"
         "Keywords" = "8:"
@@ -1670,7 +1670,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.7.9"
+            "Name" = "8:FIA Biosum Manager 5.8.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1684,7 +1684,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.7.9"
+            "Name" = "8:FIA Biosum Manager 5.8.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
