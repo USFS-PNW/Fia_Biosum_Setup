@@ -1,5 +1,5 @@
 #####Initial package loading
-library(RODBC)
+require(RODBC) || install.packages(RODBC)
 
 ####Load Data
 
