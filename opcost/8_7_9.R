@@ -1,5 +1,15 @@
 #####Initial package loading
-require(RODBC) || install.packages(RODBC)
+#####Automatically install if package missing
+packages = ("RODBC")
+
+package.check <- lapply(packages, FUN = function(x) {
+  if (!require(x, character.only = TRUE)) {
+    install.packages(x, repos="http://cran.r-project.org", dependencies = TRUE)
+    library(x, character.only = TRUE)
+  }
+})
+
+
 
 ####Load Data
 
