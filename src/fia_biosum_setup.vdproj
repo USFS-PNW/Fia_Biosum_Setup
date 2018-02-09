@@ -28,12 +28,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_05F937AC013347CF81E9D190B158AD4E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_09F3C66E4F00484F9993488F7F429364"
         "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "MsmSig" = "8:_UNDEFINED"
@@ -100,26 +94,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmKey" = "8:_2EB49235D6CB4A6DB9EFA7F7D25F16C3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -304,6 +280,30 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_CF5D1CE66B609106137B1E6E2A5B9CCF"
+        "OwnerKey" = "8:_BF019F04E83C769B1398EB00361D720A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CF5D1CE66B609106137B1E6E2A5B9CCF"
+        "OwnerKey" = "8:_A39E496A86FE4E55B481AF4470B6DC0B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CF5D1CE66B609106137B1E6E2A5B9CCF"
+        "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CF5D1CE66B609106137B1E6E2A5B9CCF"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E2764179E2B34A5EB64C929A91E4F922"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -407,7 +407,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
+        "OwnerKey" = "8:_CF5D1CE66B609106137B1E6E2A5B9CCF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -574,26 +574,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_05F937AC013347CF81E9D190B158AD4E"
-            {
-            "SourcePath" = "8:..\\opcost\\8_7_9.R"
-            "TargetName" = "8:8_7_9.R"
-            "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_09F3C66E4F00484F9993488F7F429364"
             {
             "AssemblyRegister" = "3:1"
@@ -601,6 +581,11 @@
             "AssemblyAsmDisplayName" = "8:Devart.Data, Version=5.0.938.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_09F3C66E4F00484F9993488F7F429364"
+                    {
+                    "Name" = "8:Devart.Data.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Devart.Data.dll"
             "TargetName" = "8:"
@@ -740,18 +725,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2D58BBCA0C5A27B7E4F8763BAA33D1F4"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2EB49235D6CB4A6DB9EFA7F7D25F16C3"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:EntityFramework.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\opcost\\9_1.R"
+            "TargetName" = "8:9_1.R"
             "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
+            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -763,7 +742,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_31A48AD241FA4EB9B38BD4ACEDF5BB45"
@@ -793,6 +772,11 @@
             "AssemblyAsmDisplayName" = "8:ProgressBarBasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_32E3C4B2C9CE172B59A55B836B976EA0"
+                    {
+                    "Name" = "8:ProgressBarBasic.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:ProgressBarBasic.dll"
             "TargetName" = "8:"
@@ -879,6 +863,11 @@
             "AssemblyAsmDisplayName" = "8:StandByAnimation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_581317DC5BE7FF002617B3763037F640"
+                    {
+                    "Name" = "8:StandByAnimation.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:StandByAnimation.dll"
             "TargetName" = "8:"
@@ -925,6 +914,11 @@
             "AssemblyAsmDisplayName" = "8:FIADBOracleServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_6C701828D9345E2F1B2B77FA1F4E65C3"
+                    {
+                    "Name" = "8:FIADBOracleServices.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:FIADBOracleServices.dll"
             "TargetName" = "8:"
@@ -988,9 +982,14 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.6495.25446, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.6613.24160, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_80751EBF800244FAE4DE3DD50EB51C14"
+                    {
+                    "Name" = "8:ProgressBarEx.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:ProgressBarEx.dll"
             "TargetName" = "8:"
@@ -1017,6 +1016,11 @@
             "AssemblyAsmDisplayName" = "8:Devart.Data.Oracle.Entity, Version=8.3.146.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_808FC14988209C950A3495D3F504068D"
+                    {
+                    "Name" = "8:Devart.Data.Oracle.Entity.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Devart.Data.Oracle.Entity.dll"
             "TargetName" = "8:"
@@ -1154,6 +1158,11 @@
             "AssemblyAsmDisplayName" = "8:Devart.Data.Oracle, Version=8.3.146.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_AFDCC06DD29BF6681966F4D4DF25211F"
+                    {
+                    "Name" = "8:Devart.Data.Oracle.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Devart.Data.Oracle.dll"
             "TargetName" = "8:"
@@ -1220,6 +1229,11 @@
             "AssemblyAsmDisplayName" = "8:FcsClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_BF019F04E83C769B1398EB00361D720A"
+                    {
+                    "Name" = "8:FcsClassLibrary.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:FcsClassLibrary.dll"
             "TargetName" = "8:"
@@ -1277,6 +1291,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CF5D1CE66B609106137B1E6E2A5B9CCF"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_CF5D1CE66B609106137B1E6E2A5B9CCF"
+                    {
+                    "Name" = "8:EntityFramework.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:EntityFramework.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E2764179E2B34A5EB64C929A91E4F922"
@@ -1346,6 +1391,11 @@
             "AssemblyAsmDisplayName" = "8:Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_F29283C18DD83B86022914349992A6A5"
+                    {
+                    "Name" = "8:Interop.SHDocVw.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Interop.SHDocVw.dll"
             "TargetName" = "8:"
@@ -1548,7 +1598,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.8.0"
         "ProductCode" = "8:{B493107B-0082-40D5-8849-11E11BEC0D9F}"
-        "PackageCode" = "8:{9564C8E9-8298-4A1D-BAAC-6C5FE1C0F590}"
+        "PackageCode" = "8:{388EF2A9-85E6-47B3-B96C-93B246CAC87B}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
