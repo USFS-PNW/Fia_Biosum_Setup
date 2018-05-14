@@ -448,7 +448,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta580.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta581.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -593,6 +593,11 @@
             "AssemblyAsmDisplayName" = "8:Devart.Data, Version=5.0.938.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_09F3C66E4F00484F9993488F7F429364"
+                    {
+                    "Name" = "8:Devart.Data.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Devart.Data.dll"
             "TargetName" = "8:"
@@ -954,7 +959,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.6617.26026, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.6705.25716, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                 }
@@ -983,6 +988,11 @@
             "AssemblyAsmDisplayName" = "8:Devart.Data.Oracle.Entity, Version=8.3.146.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_808FC14988209C950A3495D3F504068D"
+                    {
+                    "Name" = "8:Devart.Data.Oracle.Entity.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Devart.Data.Oracle.Entity.dll"
             "TargetName" = "8:"
@@ -1140,6 +1150,11 @@
             "AssemblyAsmDisplayName" = "8:Devart.Data.Oracle, Version=8.3.146.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_AFDCC06DD29BF6681966F4D4DF25211F"
+                    {
+                    "Name" = "8:Devart.Data.Oracle.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Devart.Data.Oracle.dll"
             "TargetName" = "8:"
@@ -1272,6 +1287,11 @@
             "AssemblyAsmDisplayName" = "8:EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_CF5D1CE66B609106137B1E6E2A5B9CCF"
+                    {
+                    "Name" = "8:EntityFramework.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:EntityFramework.dll"
             "TargetName" = "8:"
@@ -1398,6 +1418,11 @@
             "AssemblyAsmDisplayName" = "8:Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_F29283C18DD83B86022914349992A6A5"
+                    {
+                    "Name" = "8:Interop.SHDocVw.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Interop.SHDocVw.dll"
             "TargetName" = "8:"
@@ -1598,20 +1623,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.8.0"
-        "ProductCode" = "8:{B493107B-0082-40D5-8849-11E11BEC0D9F}"
-        "PackageCode" = "8:{388EF2A9-85E6-47B3-B96C-93B246CAC87B}"
+        "ProductName" = "8:FIA Biosum 5.8.1"
+        "ProductCode" = "8:{AADC46A0-73B6-4F37-AC9C-39D718D9A7C2}"
+        "PackageCode" = "8:{7A93C686-A2B2-49D9-9221-2A77FA422BF3}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.8.0"
+        "ProductVersion" = "8:5.8.1"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:(503)808-2079"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.8.0"
+        "Title" = "8:FIA Biosum Setup 5.8.1"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Larry Potts"
         "Keywords" = "8:"
@@ -1722,7 +1747,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.8.0"
+            "Name" = "8:FIA Biosum Manager 5.8.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1736,7 +1761,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.8.0"
+            "Name" = "8:FIA Biosum Manager 5.8.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
