@@ -24,22 +24,6 @@ print("m data.frame opcost_input SqlFetch:OK")
 
 odbcCloseAll()
 
-# # #Get Opcost_Input table
-# setwd('H:/cec_20170915/OPCOST/Input/')
-# con <- odbcConnectAccess2007("H:/cec_20170915/OPCOST/Input/OPCOST_8_7_9_Input_CA_P003_102_102_102_102_2018-01-16_11_20_15_AM.accdb") #Change the text after "DBH=" to the correct directory for your project
-# m<-data.frame(sqlFetch(con, "opcost_input", as.is=TRUE))
-
-
-# #####BRING IN REFERENCE TABLES######
-# setwd('..')
-# print(getwd())
-# setwd('..')
-# print(getwd())
-# setwd('./db')
-# print(getwd())
-# 
-# setwd("G:/Dropbox/Carlin/Berkeley/biosum/OPCOST")
-# ref <- "opcost_ref.ACCDB"
 ref2 <- paste0("Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=", args[2])
 
 con2 <- odbcDriverConnect(ref2)
@@ -66,26 +50,34 @@ opcost_ideal_ref <- opcost_ideal_ref[-1,]
 
 odbcCloseAll()
 
+#####MANUALLY BRING IN A SINGLE OPCOST INPUT FILE######
+# setwd('H:/cec_20170915/OPCOST/Input/')
+# con <- odbcConnectAccess2007("H:/cec_20170915 - Copy/OPCOST/Input/OPCOST_8_7_9_Input_CA_P001_100_100_100_100_2018-01-03_08_32_45_AM.accdb") #Change the text after "DBH=" to the correct directory for your project
+# m<-data.frame(sqlFetch(con, "opcost_input", as.is=TRUE))
+# 
+# con <- odbcConnectAccess2007("C:/Users/Carlin/Downloads/fia_biosum_4927.accdb") #Change the text after "DBH=" to the correct directory for your project
+# m<-data.frame(sqlFetch(con, "opcost_input", as.is=TRUE))
+
 #####BRING IN REFERENCE TABLES -- THIS IS FOR IF YOU'RE NOT USING THE ACCESS DATABASE VERSION ABOVE AND NEED TO BRING IN THE CSVS######
-# setwd("G:/Dropbox/Carlin/Berkeley/biosum/OPCOST")
+# setwd("G:/Dropbox/Carlin/GitHub/Fia_Biosum_Scripts/OPCOST")
 # opcost_equation_ref <- read.csv("opcost_equation_ref.csv")
-# # opcost_equation_ref <- opcost_equation_ref[!opcost_equation_ref$Equation.ID %in% c(45,67,68),]
 # opcost_units <- read.csv("opcost_units.csv")
-# opcost_modifiers <- read.csv("opcost_modifiers.csv")
 # opcost_cost_ref <- read.csv("opcost_cost_ref.csv")
 # opcost_harvestsystem_ref <- read.csv("opcost_harvestsystem_ref.csv")
 # opcost_ideal_ref <- read.csv("opcost_ideal_ref.csv")
 
-#Run tethered only
-opcost_harvestsystem_ref <- opcost_harvestsystem_ref[opcost_harvestsystem_ref$Harvesting.System == "Tethered",]
+#Band aid fix to run tethered CTL only. This means that the "optimal" will always be Tethered CTL.
+opcost_harvestsystem_ref <- opcost_harvestsystem_ref[opcost_harvestsystem_ref$Harvesting.System == "Tethered CTL",]
 opcost_equation_ref <- opcost_equation_ref[opcost_equation_ref$Equation.ID %in% opcost_harvestsystem_ref$Equation.ID,]
-m$Harvesting.System <- "Tethered"
 
-# setwd(og_wd)
+
 
 #Convert to Data Frame and set "NaN' to NA
 m <- data.frame(m)
 m[m == "NaN"] <- NA #convert "NaN" values to NA
+pattern <- c("Stand", "Harvesting.System")
+m_old_HS <- m[,c(which(grepl(paste0(pattern, collapse = "|"), names(m))))]
+m$Harvesting.System <- "Tethered CTL"
 
 #twitchVol is (Trees Per Acre * Average Tree Volume (ft3)) by size class, divided by total trees per acre to get average volume per tree (ft3/tree)
 m$twitchVol <- ((m$Large.log.trees.per.acre * m$Large.log.trees.average.vol.ft3.) + 
@@ -433,7 +425,7 @@ compute_harvest_system_equations <- function(data, harvest_system, allCols, mean
   return(data)
 }
 
-#tethered <- compute_harvest_system_equations(data = m, harvest_system = "Tethered", allCols = TRUE, meansonly = FALSE)
+tethered <- compute_harvest_system_equations(data = m, harvest_system = "Tethered CTL", allCols = TRUE, meansonly = FALSE)
 
 #####GET MEAN HARVEST HOURS PER ACRE FOR ALL MACHINES######
 #all_harvesting_systems runs compute_harvest_system_equations for all analyses and compiles a table
@@ -707,7 +699,7 @@ calculate_costs_for_input <- function(data, optimal) {
   data2 <- Reduce(rbind, mylist)
   
   if(optimal == TRUE) {
-    optimal.unique.harvesting.systems <- unique(data$Optimal.Harvest.System)
+    optimal.unique.harvesting.systems <- unique(as.character(data$Optimal.Harvest.System))
     optimal.unique.harvesting.systems <- optimal.unique.harvesting.systems[!is.na(optimal.unique.harvesting.systems)]
     
     optimal.list <- vector(mode="list", length=length(optimal.unique.harvesting.systems))
@@ -836,6 +828,9 @@ optimal_harvesting.system <- function(data, all) {
     data2 <- data1[,c(which(grepl(paste0(pattern, collapse = "|"), names(data1))))]
     data2 <- merge(og_data, data2)
     
+    # data2$Harvesting.System2 <- data2$Harvesting.System
+    # data2$Harvesting.System <- NULL
+    # data2 <-  merge(data2, m_old_HS)
     data2$MatchesOriginalSystem <- data2$Harvesting.System == data2$Optimal.Harvest.System
     
     mylist.ID[[i]] <- data2 #store as data frame for current ideal_ref unique ID iteration
@@ -848,6 +843,11 @@ optimal <- optimal_harvesting.system(m, all_cost)
 optimal1 <- optimal[[1]]
 
 optimal_cost <- calculate_costs_for_input(optimal1, optimal = TRUE)
+
+optimal_cost$Harvesting.System <- optimal_cost$Harvesting.System2
+optimal_cost$Harvesting.System <- NULL
+optimal_cost <- merge(optimal_cost, m_old_HS, by = "Stand")
+optimal_cost$MatchesOriginalSystem <- optimal_cost$Harvesting.System == optimal_cost$Optimal.Harvest.System
 
 
 opcost_output <- data.frame("stand" = optimal_cost$Stand, 
