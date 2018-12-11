@@ -1,3 +1,4 @@
+#OpCost 10.1.2 2018 December 4, 2018
 #####Initial package loading
 #####Automatically install if package missing
 packages = ("RODBC")
@@ -9,8 +10,9 @@ package.check <- lapply(packages, FUN = function(x) {
   }
 })
 
-
-# ####LOAD DATA FROM BIOSUM####
+#####################################################################################
+#START BIOSUM LOAD CODE BLOCK
+####LOAD DATA FROM BIOSUM####
 
 args=(commandArgs(TRUE))
 
@@ -40,11 +42,20 @@ opcost_harvestsystem_ref <- sqlFetch(con2, "opcost_harvestsystem_ref", as.is = T
 opcost_ideal_ref <- sqlFetch(con2, "opcost_ideal_ref", as.is = TRUE)
 
 odbcCloseAll()
+#END BIOSUM LOAD CODE BLOCK
+#####################################################################################
 
-
-# ####MANUALLY RUN OPCOST ON A SINGLE OPCOST INPUT FILE####
+#####################################################################################
+# ##START MANUAL LOAD CODE BLOCK
+# # ####MANUALLY RUN OPCOST ON A SINGLE OPCOST INPUT FILE####
 # opcost.ref.location <- "C:/Users/sloreno/Opcost/opcost_ref.accdb" #set the location of the opcost_ref.accdb you'd like to use
-# opcost.input.location <- "C:/Users/sloreno/Opcost/OPCOST_10_1_Input_BM_P029_210_210_210_210_2018-10-25_11_35_54_AM.accdb"
+# opcost.input.location <- "C:/Users/sloreno/Opcost/OPCOST_10_1_Input_BM_P029_210_210_210_210_2018-10-25_11_35_54_AM.accdb"#input database
+# 
+# ###set the output location database
+# opcost.output.location <- "C:/Users/sloreno/Opcost/OPCOST_10_1_Input_BM_P029_210_210_210_210_2018-10-25_11_35_54_AM.accdb"
+# 
+# ###set output for the graphs (optional)
+# graph.directory <- "C:/Users/sloreno/Opcost/opcost_graphics" 
 # 
 # #Opcost_Input
 # conn <- odbcConnectAccess2007(opcost.input.location)
@@ -68,14 +79,22 @@ odbcCloseAll()
 # opcost_ideal_ref <- sqlFetch(conn, "opcost_ideal_ref", as.is = TRUE)
 # 
 # odbcCloseAll()
+# 
+# ##END MANUAL LOAD CODE BLOCK
+#####################################################################################
 
-#####BRING IN REFERENCE TABLES -- THIS IS FOR IF YOU'RE NOT USING THE ACCESS DATABASE VERSION ABOVE AND NEED TO BRING IN THE CSVS######
+#####################################################################################
+##START CSV LOAD BLOCK
+#####BRING IN REFERENCE TABLES -- 
+#THIS IS FOR IF YOU'RE NOT USING THE ACCESS DATABASE VERSION ABOVE AND NEED TO BRING IN THE CSVS######
 # setwd("G:/Dropbox/Carlin/GitHub/Fia_Biosum_Scripts/OPCOST")
 # opcost_equation_ref <- read.csv("opcost_equation_ref.csv")
 # opcost_units <- read.csv("opcost_units.csv")
 # opcost_cost_ref <- read.csv("opcost_cost_ref.csv")
 # opcost_harvestsystem_ref <- read.csv("opcost_harvestsystem_ref.csv")
 # opcost_ideal_ref <- read.csv("opcost_ideal_ref.csv")
+##END CSV LOAD BLOCK
+#####################################################################################
 
 #Set "NaN' to NA
 m[m == "NaN"] <- NA #convert "NaN" values to NA
@@ -109,11 +128,6 @@ m$distBetweenTrees_ll[m$Large.log.trees.per.acre == 0] <- NA
 #totalWeight is average of non-zero large and small log density values (lbs/ft3) * totalVol (ft3/acre) to get (lbs/acre)
 is.na(m$Large.log.trees.average.density.lbs.ft3.) <- m$Large.log.trees.average.density.lbs.ft3.==0
 is.na(m$Small.log.trees.average.density.lbs.ft3.) <- m$Small.log.trees.average.density.lbs.ft3.==0
-
-columns <- c("Large.log.trees.average.density.lbs.ft3.", "Small.log.trees.average.density.lbs.ft3.")
-m$totalVol_smlg_ft <- (m$Large.log.trees.per.acre * m$Large.log.trees.average.vol.ft3.)+
-                  (m$Small.log.trees.per.acre * m$Small.log.trees.average.volume.ft3.)
-m$totalWeight<- rowMeans(m[columns], na.rm=TRUE) * m$totalVol_smlg_ft
 
 m$totalVol_sm_ft <- (m$Small.log.trees.per.acre * m$Small.log.trees.average.volume.ft3.)*(m$Small.log.trees.MerchAsPctOfTotal/100)
 m$totalVol_ll_ft <- (m$Large.log.trees.per.acre * m$Large.log.trees.average.vol.ft3.)*(m$Large.log.trees.MerchAsPctOfTotal/100)
@@ -152,6 +166,25 @@ m$FT_wt_LL <- with(m, ifelse(Large.log.trees.per.acre > 0, exp(1.0613+0.8841*log
 
 
 print("variables calculated")
+
+
+###################################################################################
+##ERROR TRAPPING
+
+drop <- subset(m, subset = (Harvesting.System=='Tethered Harvester' & Percent.Slope > 90) | 
+                 (Harvesting.System %in% c('Helicopter CTL', 'Helicopter Manual') & One.way.Yarding.Distance > 21000) |
+                 (Harvesting.System %in% c('Cable CTL', 'Helicopter CTL', 'Ground-Based CTL') & (twitchVol_sl > 1.5 & QMD_SL > 21)) |
+                 (Harvesting.System=="Ground-Based CTL" & One.way.Yarding.Distance > 5300) |
+                 (dbh_ct > 30) | (QMD_LL > 0 & QMD_LL < 9))
+
+m <- m[!(m$Stand %in% drop$Stand),]
+
+
+###################################################################################
+
+
+
+
 #####CALCULATE HOURS PER ACRE######
 #calculate_hpa calculates harvest time in hours per acre from the imported Opcost_Input table. 
 #It incorporates opcost_equation_ref, opcost_modifiers, opcost_units to get a final hours per acre value 
@@ -209,6 +242,8 @@ calculate_hpa <- function(data, equation.ID) {
   return(data)
   
 }
+
+test<-calculate_hpa(data = m, equation.ID = "SAW_03L")
 
 #####COMPARE HOURS PER ACRE CALCULATIONS BY MACHINE AND GET MEAN######
 #compute_harvest_system_equations runs calculate_hpa() for all equations in an machine type (e.g. "Skidder"),
@@ -313,7 +348,7 @@ compute_harvest_system_equations <- function(data, harvest_system, allCols, mean
   }
   return(data)
 }
-
+#compute_harvest_system_equations(data = m, harvest_system = "Tethered Harvester", allCols = TRUE, meansonly=FALSE)
 #####GET MEAN HARVEST HOURS PER ACRE FOR ALL MACHINES######
 #all_harvesting_systems runs compute_harvest_system_equations for all analyses and compiles a table
 #with mean values for all analyses. It returns a list with each list item as a data frame for a specific
@@ -389,7 +424,7 @@ estimate_cost <- function(harvest_system, data, cost) {
   
   #pull in lowboy calculation parameters
   pattern <- c("Stand", "Move_In_Hours", "Harvest_area_assumed_acres", "Percent.Slope")
-  lowboy.data <- m[,c(which(grepl(paste0(pattern, collapse = "|"),names(m))))]#changed data to m
+  lowboy.data <- data[,c(which(grepl(paste0(pattern, collapse = "|"),names(data))))]#changed data to m
   
   costestimate <- merge(costestimate, lowboy.data, by = "Stand")
   
@@ -501,26 +536,36 @@ opcost_output <- data.frame("stand" = output$Stand,
                             "Rx" = substr(output$Stand, 29, 31), 
                             "RxCycle" = substr(output$Stand, 32, 32)
 )
-######Use if running opcost through Biosum
+
+
+###############################################################################################
+#START BIOSUM OUTPUT CODE BLOCK
+#####Use if running opcost through Biosum
 con<-odbcConnectAccess2007(args)
 sqlSave(con, opcost_output, tablename="OpCost_Output", safer=FALSE)
+sqlSave(conn, drop, tablename="opcost_errors", safer=FALSE)
 
 odbcCloseAll()
 
+##END BIOSUM OUTPUT CODE BLOCK
+###############################################################################################
+
+
+###############################################################################################
+# ##START MANUAL OUTPUT CODE BLOCK
+# ######Use if running opcost manually
 # 
-# ######Comment out lines 499-504, and uncomment 507-514 if running Opcost outside of BioSum
-# ###set the output location database
-# opcost.output.location <- "C:/Users/sloreno/Opcost/OPCOST_10_1_Input_BM_P029_210_210_210_210_2018-10-25_11_35_54_AM.accdb"
-# 
-# #Opcost_Input
 # conn <- odbcConnectAccess2007(opcost.output.location)
 # sqlSave(conn, opcost_output, tablename="OpCost_Output", safer=FALSE)
+# sqlSave(conn, drop, tablename="opcost_errors", safer=FALSE)
 # 
 # odbcCloseAll()
+# 
+# ##END MANUAL OUTPUT CODE BLOCK
+###############################################################################################
 
-
-# ##########################################
-# ###CREATE ANALYSIS GRAPHICS###
+# # ##########################################
+# # ###CREATE ANALYSIS GRAPHICS###
 # packages <- c("reshape2", "ggplot2", "dplyr", "data.table", "plyr")
 # 
 # package.check <- lapply(packages, FUN = function(x) {
@@ -535,11 +580,8 @@ odbcCloseAll()
 # #The code below will save it to your project directory in a new folder called "opcost_graphics"
 # #MAKE SURE YOUR WORKING DIRECTORY IS SET TO WHERE YOU WANT THE GRAPHICS TO SAVE###
 # #The code below will save it to your project directory in a new folder called "opcost_graphics"
-# project.directory <- "C:/Users/sloreno/Opcost/" #change to your project directory
-# setwd(project.directory)
-# dir.create("opcost_graphics", showWarnings = FALSE)
-# setwd(file.path(project.directory, "opcost_graphics"))
-# 
+# #project.directory <- "C:/Users/sloreno/Opcost/opcost_graphics" #change to your project directory
+# setwd(graph.directory)
 # 
 # graph_analyses_machine <- function(data) {
 #   ref <- opcost_equation_ref
@@ -554,12 +596,11 @@ odbcCloseAll()
 #   #in the global environment when the function is run
 #   ref$Machine.size <- paste0(ref$Machine, "_", ref$Size)
 #   unique.machines <- unique(ref$Machine.size)
-#   old.dir <- getwd()
-#   folder <- file.path(old.dir, paste(format(Sys.Date(), "%Y%m%d"), "machine_analysis", sep = "_"))
+#   folder <- file.path(graph.directory, paste(format(Sys.Date(), "%Y%m%d:%H:%M:%S"), "machine_analysis", sep = "_"))
 #   dir.create(folder, showWarnings = FALSE)
 #   setwd(folder)
-#   
-#   
+# 
+# 
 #   for (i in 1:length(unique.machines)) {
 #     values <- ref[as.character(ref$Machine.size) == as.character(unique.machines[i]),]
 #     values <- values[values$Equation != "",]
@@ -583,34 +624,34 @@ odbcCloseAll()
 #     df2$variable <- gsub(unique.machines[i],"",df2$variable)
 #     df4$variable <- gsub(unique.machines[i],"",df4$variable)
 #     df5 <- merge(df2, values[, c("EquationID", "Machine.size")], by.x="variable", by.y="EquationID")#Turn your 'treatment' column into a character vector
-#     graph <- ggplot(df5, aes(variable, value, fill =  variable)) + 
-#       geom_boxplot() + 
+#     graph <- ggplot(df5, aes(variable, value, fill =  variable)) +
+#       geom_boxplot() +
 #       labs(x=unique.machines[i], y="Hours Per Acre") +
 #       facet_wrap(  ~ Machine.size)
 #     ggsave(filename = paste0(unique.machines[i], ".png"),graph, device = "png", width = ifelse(nrow(df4)*1.3 > 6, nrow(df4)*1.3, 6))
 #   }
-#   setwd(old.dir)
+#   setwd(graph.directory)
 # }
 # 
 # graph_analyses_machine(m)
-
-
-#
+# 
 # graph_analyses_harvest_system <- function(data) {
 #   ref <- opcost_harvestsystem_ref
-#   unique.harvest.system <- unique(ref$Harvesting.System)
-#   old.dir <- getwd()
-#   dir.create(file.path(getwd(), paste(format(Sys.Date(), "%Y%m%d"), "harvest_system_analysis", sep = "_")), showWarnings = FALSE)
-#   setwd(file.path(old.dir, paste(format(Sys.Date(), "%Y%m%d"), "harvest_system_analysis", sep = "_")))
-#
+#   unique.harvest.system <- unique(ref$HarvestingSystem)
+#   dir.create(file.path(graph.directory, paste(format(Sys.Date(), "%Y%m%d:%H:%M:%S"), "harvest_system_analysis", sep = "_")), showWarnings = FALSE)
+#   setwd(file.path(pgraph.directory, paste(format(Sys.Date(), "%Y%m%d"), "harvest_system_analysis", sep = "_")))
+# 
 #   for (i in 1:length(unique.harvest.system)) {
 #     pattern <- c(" ", "-", "/") #use data frame names as the harvest system names vector
 #     filename1 <- gsub(paste0(pattern, collapse = "|"),".", unique.harvest.system[i])
 #     values.data <- compute_harvest_system_equations(data = data, harvest_system = unique.harvest.system[i], meansonly = FALSE)
+#     #values.data <- compute_harvest_system_equations(data = m, harvest_system = "Cable CTL", meansonly = FALSE)
 #     # pattern <- c("TETH_01", "TETH_02", "TETH_03")
 #     # values.data$TETH <- rowSums(values.data[,c(which(grepl(paste0(pattern, collapse = "|"), names(values.data))))], na.rm = TRUE)
 #     # values.data <- values.data[,-c(which(grepl(paste0(pattern, collapse = "|"), names(values.data))))]
-#     values.data <- values.data[,-c(which(grepl("mean", names(values.data))))]
+#     #values.data <- values.data[,-c(which(grepl("mean", names(values.data))))]
+#     values.data <- values.data[, !grepl("mean", colnames(values.data))]
+#     values.data <- values.data[, !grepl("FT_wt", colnames(values.data))]
 #     b <- ncol(values.data)
 #     a <- 2
 #     df2 <- melt(values.data, id.vars = c(1), measure.vars = names(values.data)[a:b])
@@ -623,12 +664,15 @@ odbcCloseAll()
 #     # df4$variable <- gsub(unique.machines[i],"",df4$variable)
 #     # ylim1 <- boxplot.stats(df2$value)$stats[c(1, 5)]
 #     graph <- ggplot(df2, aes(variable, value)) + geom_boxplot() + labs(x=unique.harvest.system[i], y="Hours Per Acre") +
-#       scale_x_discrete(labels = paste(df4$variable, df4$n, sep = "\n"))
+#       scale_x_discrete(labels = paste(df4$variable, df4$n, sep = "\n"))+
+#       scale_y_continuous(limits = c(0,120), breaks=c(0, 20, 40, 60, 80, 100, 120))
 #     # coord_cartesian(ylim = ylim1*3)
 #     assign("graph", graph, envir = .GlobalEnv)
-#     ggsave(filename = paste0(filename1, ".png"),graph, device = "png", width = ifelse(nrow(df4)*1.1 > 6, nrow(df4)*1.1, 6),)
+#     ggsave(filename = paste0(filename1, ".png"),graph, device = "png", width = ifelse(nrow(df4)*1.1 > 6, nrow(df4)*1.1, 6))
 #   }
-#   setwd(old.dir)
+#   setwd(graph.directory)
 # }
-#
+# 
 # graph_analyses_harvest_system(m)
+
+
