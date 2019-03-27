@@ -21,4 +21,6 @@ When the version number is changed, it needs to be changed in the following file
 4. USFS-PNW/Fia_Biosum_Setup Property pages\Output file name
 5. USFS-PNW/Fia-Biosum-Manager src\frmMain g_strAppVer variable (Note: this also updates version in frmAbout)
 6. USFS-PNW/Fia-Biosum-Manager src\version_control.cs PerformVersionCheck function to show 
-   which database versions are compatible with the new application version 
+   which database versions are compatible with the new application version
+7. If USFS-PNW/Fia_Biosum_Setup\db\biosum_ref.accdb is updated, REF_VERSION.version_num needs to be incremented
+8. USFS-PNW/Fia-Biosum-Manager src\frmMain g_intRefDbVer variable needs to match REF_VERSION.version_num
