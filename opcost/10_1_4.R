@@ -1,4 +1,4 @@
-#OpCost 10.1.2 2018 December 4, 2018
+#OpCost 10.1.4 2019 April 29, 2019
 #####Initial package loading
 #####Automatically install if package missing
 packages = ("RODBC")
@@ -10,78 +10,77 @@ package.check <- lapply(packages, FUN = function(x) {
   }
 })
 
+###################### STAND ALONE PATH DIRECTORIES ################################
+
+opcost.ref <- "C:/Users/sloreno/Opcost/opcost_ref.accdb" #set the location of the opcost_ref.accdb you'd like to use
+opcost.input <- "C:/Users/sloreno/Opcost/test29.accdb"#input database
+
+###set the output location database
+opcost.output <- "C:/Users/sloreno/Opcost/test29.accdb"
+
+###set output for the graphs (optional)
+graph.output <- "C:/Users/sloreno/Opcost/opcost_graphics"
+
+
 #####################################################################################
-#START BIOSUM LOAD CODE BLOCK
-####LOAD DATA FROM BIOSUM####
+##LOAD DATA
 
 args=(commandArgs(TRUE))
 
 print(args[1])
 
-con<-odbcConnectAccess2007(args[1])
-print("odbc Connection:OK")
-m<-data.frame(sqlFetch(con, "opcost_input", as.is=TRUE))
-print("m data.frame opcost_input SqlFetch:OK")
+if (length(args)>0) {
+  con<-odbcConnectAccess2007(args[1])
+  print("odbc Connection:OK")
+  m<-data.frame(sqlFetch(con, "opcost_input", as.is=TRUE))
+  print("m data.frame opcost_input SqlFetch:OK")
+  
+  odbcCloseAll()
+  
+  ref2 <- paste0("Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=", args[2])
+  
+  con2 <- odbcDriverConnect(ref2)
+  
+  opcost_equation_ref<- sqlFetch(con2, "opcost_equation_ref", as.is = TRUE)
+  
+  opcost_cost_ref <- sqlFetch(con2, "opcost_cost_ref", as.is = TRUE)
+  
+  opcost_harvestequation_ref <- sqlFetch(con2, "opcost_harvestequation_ref", as.is = TRUE)
+  
+  opcost_harvestsystem_ref <- sqlFetch(con2, "opcost_harvestsystem_ref", as.is = TRUE)
+  
+  odbcCloseAll()
+  
+} else {
+  opcost.ref.location <- opcost.ref
+  opcost.input.location <- opcost.input
 
-odbcCloseAll()
+  ###set the output location database
+  opcost.output.location <-opcost.output
 
-ref2 <- paste0("Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=", args[2])
+  ###set output for the graphs (optional)
+  graph.directory <- graph.output
 
-con2 <- odbcDriverConnect(ref2)
+  #Opcost_Input
+  conn <- odbcConnectAccess2007(opcost.input.location)
+  m<-data.frame(sqlFetch(conn, "opcost_input", as.is=TRUE))
 
-opcost_equation_ref<- sqlFetch(con2, "opcost_equation_ref", as.is = TRUE)
+  odbcCloseAll()
 
-opcost_units <- sqlFetch(con2, "opcost_units", as.is = TRUE)
+  #Opcost_Ref
+  conn <- odbcConnectAccess2007(opcost.ref.location)
 
-opcost_cost_ref <- sqlFetch(con2, "opcost_cost_ref", as.is = TRUE)
+  opcost_equation_ref<- sqlFetch(conn, "opcost_equation_ref", as.is = TRUE)
 
-opcost_harvestequation_ref <- sqlFetch(con2, "opcost_harvestequation_ref", as.is = TRUE)
+  opcost_cost_ref <- sqlFetch(conn, "opcost_cost_ref", as.is = TRUE)
 
-opcost_harvestsystem_ref <- sqlFetch(con2, "opcost_harvestsystem_ref", as.is = TRUE)
+  opcost_harvestequation_ref <- sqlFetch(conn, "opcost_harvestequation_ref", as.is = TRUE)
 
-opcost_ideal_ref <- sqlFetch(con2, "opcost_ideal_ref", as.is = TRUE)
+  opcost_harvestsystem_ref <- sqlFetch(conn, "opcost_harvestsystem_ref", as.is = TRUE)
 
-odbcCloseAll()
-#END BIOSUM LOAD CODE BLOCK
-#####################################################################################
+  odbcCloseAll()
+}
 
-#####################################################################################
-# ##START MANUAL LOAD CODE BLOCK
-# # ####MANUALLY RUN OPCOST ON A SINGLE OPCOST INPUT FILE####
-# opcost.ref.location <- "C:/Users/sloreno/Opcost/opcost_ref.accdb" #set the location of the opcost_ref.accdb you'd like to use
-# opcost.input.location <- "C:/Users/sloreno/Opcost/OPCOST_10_1_Input_BM_P029_210_210_210_210_2018-10-25_11_35_54_AM.accdb"#input database
-# 
-# ###set the output location database
-# opcost.output.location <- "C:/Users/sloreno/Opcost/OPCOST_10_1_Input_BM_P029_210_210_210_210_2018-10-25_11_35_54_AM.accdb"
-# 
-# ###set output for the graphs (optional)
-# graph.directory <- "C:/Users/sloreno/Opcost/opcost_graphics" 
-# 
-# #Opcost_Input
-# conn <- odbcConnectAccess2007(opcost.input.location)
-# m<-data.frame(sqlFetch(conn, "opcost_input", as.is=TRUE))
-# 
-# odbcCloseAll()
-# 
-# #Opcost_Ref
-# conn <- odbcConnectAccess2007(opcost.ref.location)
-# 
-# opcost_equation_ref<- sqlFetch(conn, "opcost_equation_ref", as.is = TRUE)
-# 
-# opcost_units <- sqlFetch(conn, "opcost_units", as.is = TRUE)
-# 
-# opcost_cost_ref <- sqlFetch(conn, "opcost_cost_ref", as.is = TRUE)
-# 
-# opcost_harvestequation_ref <- sqlFetch(conn, "opcost_harvestequation_ref", as.is = TRUE)
-# 
-# opcost_harvestsystem_ref <- sqlFetch(conn, "opcost_harvestsystem_ref", as.is = TRUE)
-# 
-# opcost_ideal_ref <- sqlFetch(conn, "opcost_ideal_ref", as.is = TRUE)
-# 
-# odbcCloseAll()
-# 
-# ##END MANUAL LOAD CODE BLOCK
-#####################################################################################
 
 #####################################################################################
 ##START CSV LOAD BLOCK
@@ -138,8 +137,16 @@ m$totalWeight <- (m$totalVol_sm_ft * m$Small.log.trees.average.density.lbs.ft3.)
 m[is.na(m)] <- 0
 
 #ChipFeedstockWeight is sum of trees per acre of small logs and large logs assigned to the chip bine times volume and density
-m$ChipFeedstockWeight <- (m$Small.log.trees.per.acre * (m$Small.log.trees.ChipPct_Cat1_3/100) * m$Small.log.trees.average.volume.ft3. * m$Small.log.trees.average.density.lbs.ft3.) + 
-  (m$Large.log.trees.per.acre * (m$Large.log.trees.ChipPct_Cat1_3_4/100) * m$Large.log.trees.average.vol.ft3. * m$Large.log.trees.average.density.lbs.ft3.)
+
+m$ChipFeedstockWeight  <- ifelse(grepl("WT", m$Harvesting.System), 
+                                 m$ChipFeedstockWeight <- (m$Small.log.trees.per.acre * (m$Small.log.trees.ChipPct_Cat2_4/100) * 
+                                                             m$Small.log.trees.average.volume.ft3. * m$Small.log.trees.average.density.lbs.ft3.) 
+                                 + (m$Large.log.trees.per.acre * (m$Large.log.trees.ChipPct_Cat2/100) * m$Large.log.trees.average.vol.ft3. 
+                                    * m$Large.log.trees.average.density.lbs.ft3.),
+                                 m$ChipFeedstockWeight <- (m$Small.log.trees.per.acre * (m$Small.log.trees.ChipPct_Cat1_3/100) * 
+                                                             m$Small.log.trees.average.volume.ft3. * m$Small.log.trees.average.density.lbs.ft3.) 
+                                 + (m$Large.log.trees.per.acre * (m$Large.log.trees.ChipPct_Cat1_3_4/100) * m$Large.log.trees.average.vol.ft3. * 
+                                      m$Large.log.trees.average.density.lbs.ft3.))
 
 ###Tethered Harvester equations - see Petitmermet harvest cost model doc for reference
 
@@ -166,24 +173,6 @@ m$FT_wt_LL <- with(m, ifelse(Large.log.trees.per.acre > 0, exp(1.0613+0.8841*log
 
 
 print("variables calculated")
-
-
-###################################################################################
-##ERROR TRAPPING
-
-drop <- subset(m, subset = (Harvesting.System=='Tethered Harvester' & Percent.Slope > 90) | 
-                 (Harvesting.System %in% c('Helicopter CTL', 'Helicopter Manual') & One.way.Yarding.Distance > 21000) |
-                 (Harvesting.System %in% c('Cable CTL', 'Helicopter CTL', 'Ground-Based CTL') & (twitchVol_sl > 1.5 & QMD_SL > 21)) |
-                 (Harvesting.System=="Ground-Based CTL" & One.way.Yarding.Distance > 5300) |
-                 (dbh_ct > 30) | (QMD_LL > 0 & QMD_LL < 9))
-
-m <- m[!(m$Stand %in% drop$Stand),]
-
-
-###################################################################################
-
-
-
 
 #####CALCULATE HOURS PER ACRE######
 #calculate_hpa calculates harvest time in hours per acre from the imported Opcost_Input table. 
@@ -243,7 +232,7 @@ calculate_hpa <- function(data, equation.ID) {
   
 }
 
-test<-calculate_hpa(data = m, equation.ID = "SAW_03L")
+test<-calculate_hpa(data = m, equation.ID = "CHIP_01")
 
 #####COMPARE HOURS PER ACRE CALCULATIONS BY MACHINE AND GET MEAN######
 #compute_harvest_system_equations runs calculate_hpa() for all equations in an machine type (e.g. "Skidder"),
@@ -263,10 +252,10 @@ compute_harvest_system_equations <- function(data, harvest_system, allCols, mean
     allCols <- FALSE
   }
   
+  data1 = data
+  
   equation_ref <- opcost_equation_ref
   harvestequation_ref <- opcost_harvestequation_ref
-  
-  data1 <- data #rename data
   
   harvest.system <- harvestequation_ref[harvestequation_ref$Method == harvest_system,]
   
@@ -293,6 +282,7 @@ compute_harvest_system_equations <- function(data, harvest_system, allCols, mean
   #create list
   ref_list <- ref[,"EquationID"]
   
+  
   #create new dataframe containing stand values of input data
   newdata <- data.frame(data1$Stand)
   #rename column to stand
@@ -302,8 +292,6 @@ compute_harvest_system_equations <- function(data, harvest_system, allCols, mean
     output <- calculate_hpa(data = data1, equation.ID = ref_list[i])
     newdata <- merge(newdata, output[, c(1, ncol(output))], by = "Stand")
   }
-  
-  
   
   cleaned.newdata <- do.call(data.frame,lapply(newdata, function(x) replace(x, is.infinite(x),NA))) #replace Inf values with NA
   cleaned.newdata <- do.call(data.frame,lapply(cleaned.newdata, function(x) replace(x, x == 0,NA))) #replace zero values with NA
@@ -338,6 +326,28 @@ compute_harvest_system_equations <- function(data, harvest_system, allCols, mean
   data <- merge(data2, data.means, all.x = TRUE)[, union(names(data2), names(data.means))]
   data[is.na(data)] <- NA
   
+  ############################################################################################# 
+  #Error Trapping
+  
+  limit.test <-aggregate(ref$LimitStatement, list(ref$Machine, ref$Size), paste, collapse=" | ")
+  
+  limit.test <-limit.test[ which(limit.test$x != "NA"),]
+  limit.test <-limit.test[!grepl("NA", limit.test$x),]
+  
+  limit.test$x <-paste0("(", limit.test$x, ")")
+  
+  limit.test.statement <-paste(unlist(limit.test$x), collapse =" & ")
+  
+  limit.test.statement <- paste0("with(data, (", limit.test.statement, ")==FALSE)")
+  
+  data$limit.flag <- eval(parse(text=limit.test.statement))
+  
+  drop <- subset(data, limit.flag=="TRUE", select = "Stand")
+  
+  data <- data[!(data$Stand %in% drop$Stand),]
+  
+  ############################################################################################# 
+  
   if(allCols == FALSE) { #if allCols = FALSE
     b <- ncol(data)-(ncol(cleaned.newdata)+ncol(data.means))
     data <- data[,c(1, (b):ncol(data))] #remove old data columns (keep Stand column)
@@ -346,44 +356,10 @@ compute_harvest_system_equations <- function(data, harvest_system, allCols, mean
   if(meansonly == TRUE) {
     data <- data.means
   }
-  return(data)
+  return(list(data, drop))
 }
-#compute_harvest_system_equations(data = m, harvest_system = "Tethered Harvester", allCols = TRUE, meansonly=FALSE)
-#####GET MEAN HARVEST HOURS PER ACRE FOR ALL MACHINES######
-#all_harvesting_systems runs compute_harvest_system_equations for all analyses and compiles a table
-#with mean values for all analyses. It returns a list with each list item as a data frame for a specific
-#harvesting system. This function is used in the estimate_cost() function. 
 
-#Arguments:
-#data - The opcost input data
 
-#Example: all_harvesting_systems(data = m)
-# 
-# all_harvesting_systems <- function(data) {
-#   equation_ref <- opcost_equation_ref
-#   harvestequation_ref <- opcost_harvestequation_ref
-#   
-#   #get unique harvest system values from harvestsystem_ref
-#   harvest.system <- unique(harvestequation_ref$Method)
-#   
-#   #create empty list to store loop values
-#   mylist <- vector(mode="list", length=length(harvest.system))
-#   name.vector <- as.character() #create empty vector for list name values
-#   for (i in 1:length(harvest.system)) {
-#    name.vector <- c(name.vector, paste0(harvest.system[i]) ) #get name vector value for this loop iteration
-#    mylist[[i]] <- list(compute_harvest_system_equations(data, harvest.system[i], allCols = FALSE, meansonly = TRUE)) #run and store compute_harvest_system_equations for each unique machine value
-#   }
-#   
-#   names(mylist) <- name.vector #name each list item 
-#   
-#   #all <- Reduce(merge, mylist) #merge list items (i.e. put all machine compute_harvest_system_equations function results in a single data frame)
-#   
-#   return(mylist)
-# }
-# 
-# all <- all_harvesting_systems(data = m)
-# 
-# GBMWT_all <- as.data.frame(all$"Ground-Based Mech WT") #convert list to data frame
 
 #####ESTIMATE COST######
 #The estimate_cost function takes reference tables opcost_cost_ref, opcost_harvestsystem_ref, 
@@ -419,7 +395,10 @@ estimate_cost <- function(harvest_system, data, cost) {
   
   costestimate_ref <- costestimate_ref[!is.na(costestimate_ref$Cost),]#remove harvest systems where a cost per hour value is not given
   
-  costestimate <- compute_harvest_system_equations(data, harvest_system, allCols = FALSE, meansonly = TRUE)
+  run_costestimate <- compute_harvest_system_equations(data, harvest_system, allCols = FALSE, meansonly = TRUE)
+  costestimate <- run_costestimate[[1]]
+  drop <- run_costestimate[[2]]
+
   costestimate[is.na(costestimate)] <- 0
   
   #pull in lowboy calculation parameters
@@ -485,10 +464,9 @@ estimate_cost <- function(harvest_system, data, cost) {
   pattern <- c("Total.NoChip.Machine_CPA", "Total.Move.In.Cost", "Total_CPA", "Chipper_CPA")
   system.cpa <- costestimate[,c(1,which(grepl(paste0(pattern, collapse = "|"),names(costestimate))))]
 
-  return(system.cpa)
+  return(list(system.cpa, drop))
   
 }
-
 
 
 #####CALCULATE HARVEST COSTS######
@@ -505,24 +483,40 @@ estimate_cost <- function(harvest_system, data, cost) {
 #Example: calculate_costs_for_input(data = m)
 
 calculate_costs_for_input <- function(data) {
+  
+  #data <- m
   unique.harvesting.systems <- unique(data$Harvesting.System)
   unique.harvesting.systems <- unique.harvesting.systems[!is.na(unique.harvesting.systems)]
   
   mylist <- vector(mode="list", length=length(unique.harvesting.systems))
+  droplist <- vector(mode="list", length=length(unique.harvesting.systems))
   
   for(i in 1:length(unique.harvesting.systems)) {
     system <- data[data$Harvesting.System == unique.harvesting.systems[i],]
     system2 <- suppressWarnings(estimate_cost(unique.harvesting.systems[i], system))
-    mylist[[i]] <- system2
+    mylist[[i]] <- system2[[1]]
+    droplist[[i]] <- system2[[2]]
   }
   
   data2 <- Reduce(rbind, mylist)
   data2 <- merge(data2, data[, c("Stand", "Harvesting.System")], by="Stand")
   
-  return(data2)
+  drop <- Reduce(rbind, droplist)
+  drop <- merge(drop, data[, c("Stand", "Harvesting.System", "RxCycle", "RxPackage", "Rx", "biosum_cond_id")], by="Stand")
+  
+  return(list(data2, drop))
 }
 
-output <- calculate_costs_for_input(m)
+run_output <- calculate_costs_for_input(m)
+output <- run_output[[1]]
+
+drop <- run_output[[2]]
+
+if (nrow(drop)>0) {
+drop$error <- "Machine Limit Exceeded"
+}
+
+output <- output[!(output$Stand %in% drop$Stand),]
 
 
 opcost_output <- data.frame("stand" = output$Stand, 
@@ -534,38 +528,36 @@ opcost_output <- data.frame("stand" = output$Stand,
                             "biosum_cond_id" = substr(output$Stand, 1, 25),
                             "RxPackage" = substr(output$Stand, 26, 28), 
                             "Rx" = substr(output$Stand, 29, 31), 
-                            "RxCycle" = substr(output$Stand, 32, 32)
-)
+                            "RxCycle" = substr(output$Stand, 32, 32))
+                            
+opcost_errors <- data.frame("stand" = drop$Stand, 
+                            "harvest_system" = drop$Harvesting.System,
+                            "error_message" = drop$error,
+                            "biosum_cond_id" = drop$biosum_cond_id, 
+                            "RxPackage" = drop$RxPackage, 
+                            "Rx" = drop$Rx,
+                            "RxCycle" = drop$RxCycle)
 
 
-###############################################################################################
-#START BIOSUM OUTPUT CODE BLOCK
-#####Use if running opcost through Biosum
-con<-odbcConnectAccess2007(args)
-sqlSave(con, opcost_output, tablename="OpCost_Output", safer=FALSE)
-sqlSave(conn, drop, tablename="opcost_errors", safer=FALSE)
+############################ OUTPUT ##################################
 
-odbcCloseAll()
+if (length(args!=0)) {
+  con<-odbcConnectAccess2007(args)
+  sqlSave(con, opcost_output, tablename="OpCost_Output", safer=FALSE)
+  if (nrow(opcost_errors)>0)
+  sqlSave(con, opcost_errors, tablename="OpCost_Errors", safer=FALSE)
+  odbcCloseAll()
+} else {
+  conn <- odbcConnectAccess2007(opcost.output.location)
+  sqlSave(conn, opcost_output, tablename="OpCost_Output", safer=FALSE)
+  if (nrow(opcost_errors)>0)
+  sqlSave(conn, opcost_errors, tablename="OpCost_Errors", safer=FALSE)
+  odbcCloseAll()
+}
 
-##END BIOSUM OUTPUT CODE BLOCK
-###############################################################################################
 
-
-###############################################################################################
-# ##START MANUAL OUTPUT CODE BLOCK
-# ######Use if running opcost manually
-# 
-# conn <- odbcConnectAccess2007(opcost.output.location)
-# sqlSave(conn, opcost_output, tablename="OpCost_Output", safer=FALSE)
-# sqlSave(conn, drop, tablename="opcost_errors", safer=FALSE)
-# 
-# odbcCloseAll()
-# 
-# ##END MANUAL OUTPUT CODE BLOCK
-###############################################################################################
-
-# # ##########################################
-# # ###CREATE ANALYSIS GRAPHICS###
+# ###################################################################################
+# ###CREATE ANALYSIS GRAPHICS###
 # packages <- c("reshape2", "ggplot2", "dplyr", "data.table", "plyr")
 # 
 # package.check <- lapply(packages, FUN = function(x) {
@@ -574,7 +566,7 @@ odbcCloseAll()
 #     library(x, character.only = TRUE)
 #   }
 # })
-# 
+
 # 
 # #MAKE SURE YOUR WORKING DIRECTORY IS SET TO WHERE YOU WANT THE GRAPHICS TO SAVE###
 # #The code below will save it to your project directory in a new folder called "opcost_graphics"
@@ -596,7 +588,7 @@ odbcCloseAll()
 #   #in the global environment when the function is run
 #   ref$Machine.size <- paste0(ref$Machine, "_", ref$Size)
 #   unique.machines <- unique(ref$Machine.size)
-#   folder <- file.path(graph.directory, paste(format(Sys.Date(), "%Y%m%d:%H:%M:%S"), "machine_analysis", sep = "_"))
+#   folder <- file.path(graph.directory, paste(format(Sys.time(), "%Y%m%d%H%M%S"), "machine_analysis", sep = "_"))
 #   dir.create(folder, showWarnings = FALSE)
 #   setwd(folder)
 # 
@@ -638,13 +630,15 @@ odbcCloseAll()
 # graph_analyses_harvest_system <- function(data) {
 #   ref <- opcost_harvestsystem_ref
 #   unique.harvest.system <- unique(ref$HarvestingSystem)
-#   dir.create(file.path(graph.directory, paste(format(Sys.Date(), "%Y%m%d:%H:%M:%S"), "harvest_system_analysis", sep = "_")), showWarnings = FALSE)
-#   setwd(file.path(pgraph.directory, paste(format(Sys.Date(), "%Y%m%d"), "harvest_system_analysis", sep = "_")))
+#   folder <- file.path(graph.directory, paste(format(Sys.time(), "%Y%m%d%H%M%S"), "harvest_analysis", sep = "_"))
+#   dir.create(folder, showWarnings = FALSE)
+#   setwd(folder)
 # 
 #   for (i in 1:length(unique.harvest.system)) {
 #     pattern <- c(" ", "-", "/") #use data frame names as the harvest system names vector
 #     filename1 <- gsub(paste0(pattern, collapse = "|"),".", unique.harvest.system[i])
-#     values.data <- compute_harvest_system_equations(data = data, harvest_system = unique.harvest.system[i], meansonly = FALSE)
+#     run.values.data <- compute_harvest_system_equations(data = data, harvest_system = unique.harvest.system[i], meansonly = FALSE)
+#     values.data<-run.values.data[[1]]
 #     #values.data <- compute_harvest_system_equations(data = m, harvest_system = "Cable CTL", meansonly = FALSE)
 #     # pattern <- c("TETH_01", "TETH_02", "TETH_03")
 #     # values.data$TETH <- rowSums(values.data[,c(which(grepl(paste0(pattern, collapse = "|"), names(values.data))))], na.rm = TRUE)
@@ -652,6 +646,7 @@ odbcCloseAll()
 #     #values.data <- values.data[,-c(which(grepl("mean", names(values.data))))]
 #     values.data <- values.data[, !grepl("mean", colnames(values.data))]
 #     values.data <- values.data[, !grepl("FT_wt", colnames(values.data))]
+#     values.data <- values.data[1:(length(values.data)-1)]
 #     b <- ncol(values.data)
 #     a <- 2
 #     df2 <- melt(values.data, id.vars = c(1), measure.vars = names(values.data)[a:b])
@@ -664,10 +659,8 @@ odbcCloseAll()
 #     # df4$variable <- gsub(unique.machines[i],"",df4$variable)
 #     # ylim1 <- boxplot.stats(df2$value)$stats[c(1, 5)]
 #     graph <- ggplot(df2, aes(variable, value)) + geom_boxplot() + labs(x=unique.harvest.system[i], y="Hours Per Acre") +
-#       scale_x_discrete(labels = paste(df4$variable, df4$n, sep = "\n"))+
-#       scale_y_continuous(limits = c(0,120), breaks=c(0, 20, 40, 60, 80, 100, 120))
-#     # coord_cartesian(ylim = ylim1*3)
-#     assign("graph", graph, envir = .GlobalEnv)
+#       scale_x_discrete(labels = paste(df4$variable, df4$n, sep = "\n"))
+#       #scale_y_continuous(limits = c(0,120), breaks=c(0, 20, 40, 60, 80, 100, 120))
 #     ggsave(filename = paste0(filename1, ".png"),graph, device = "png", width = ifelse(nrow(df4)*1.1 > 6, nrow(df4)*1.1, 6))
 #   }
 #   setwd(graph.directory)
