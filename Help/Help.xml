@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2014-02-28T10:08:14">
+<!-- RELEASE_NOTES.xps -->
+<BIOSUM_HELP>
+	<PARENT_ITEM>RELEASENOTES</PARENT_ITEM>
+	<CHILD_ITEM>PAGE1</CHILD_ITEM>
+	<PAGENUMBER>1</PAGENUMBER>
+</BIOSUM_HELP>
 <!-- DATABASE_Help.xps -->
 <BIOSUM_HELP>
 	<PARENT_ITEM>DATABASE</PARENT_ITEM>
