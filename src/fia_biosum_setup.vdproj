@@ -46,12 +46,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_29FAD825554B4EF38B7113AF98F66AE7"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2B32A3BBAAC5441D9FD462AD4156DF80"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -102,12 +96,6 @@
         {
         "MsmKey" = "8:_581317DC5BE7FF002617B3763037F640"
         "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5A12001BA7D84668AD9B2A620E7E606D"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -221,6 +209,12 @@
         "Entry"
         {
         "MsmKey" = "8:_E44FECA481E14636ADB1E2ED2A275ADC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E8BB9D64949E412B9E6449A9D170E6CC"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -518,26 +512,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_29FAD825554B4EF38B7113AF98F66AE7"
-            {
-            "SourcePath" = "8:..\\..\\Fia-Biosum-Manager\\src\\bin\\Debug\\x64\\SQLite.Interop.dll"
-            "TargetName" = "8:SQLite.Interop.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_4460C3A22FA1452ABA642CE0960287CD"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2B32A3BBAAC5441D9FD462AD4156DF80"
             {
             "SourcePath" = "8:..\\db\\utils.mdb"
@@ -585,6 +559,11 @@
             "AssemblyAsmDisplayName" = "8:ProgressBarBasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_32E3C4B2C9CE172B59A55B836B976EA0"
+                    {
+                    "Name" = "8:ProgressBarBasic.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:ProgressBarBasic.dll"
             "TargetName" = "8:"
@@ -722,6 +701,11 @@
             "AssemblyAsmDisplayName" = "8:StandByAnimation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_581317DC5BE7FF002617B3763037F640"
+                    {
+                    "Name" = "8:StandByAnimation.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:StandByAnimation.dll"
             "TargetName" = "8:"
@@ -739,26 +723,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5A12001BA7D84668AD9B2A620E7E606D"
-            {
-            "SourcePath" = "8:..\\..\\Fia-Biosum-Manager\\src\\bin\\Debug\\x86\\SQLite.Interop.dll"
-            "TargetName" = "8:SQLite.Interop.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_87EEAC607AF240CEA9981E7C780439B7"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5EDC1CBCD8C34DC7989D51B2FA3A3F68"
@@ -788,6 +752,11 @@
             "AssemblyAsmDisplayName" = "8:FIADBOracleServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_6C701828D9345E2F1B2B77FA1F4E65C3"
+                    {
+                    "Name" = "8:FIADBOracleServices.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:FIADBOracleServices.dll"
             "TargetName" = "8:"
@@ -851,9 +820,14 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7412.19181, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7426.21953, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_80751EBF800244FAE4DE3DD50EB51C14"
+                    {
+                    "Name" = "8:ProgressBarEx.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:ProgressBarEx.dll"
             "TargetName" = "8:"
@@ -877,9 +851,14 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7412.19181, Culture=neutral, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7426.21953, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_80D394334D8F0A1DCB5CBABC7820196F"
+                    {
+                    "Name" = "8:ado_data_oracle.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:ado_data_oracle.dll"
             "TargetName" = "8:"
@@ -1017,6 +996,11 @@
             "AssemblyAsmDisplayName" = "8:FcsClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_BF019F04E83C769B1398EB00361D720A"
+                    {
+                    "Name" = "8:FcsClassLibrary.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:FcsClassLibrary.dll"
             "TargetName" = "8:"
@@ -1113,6 +1097,26 @@
             "TargetName" = "8:MAIN_Help.xps"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E8BB9D64949E412B9E6449A9D170E6CC"
+            {
+            "SourcePath" = "8:..\\..\\Fia-Biosum-Manager\\src\\bin\\Debug\\x86\\SQLite.Interop.dll"
+            "TargetName" = "8:SQLite.Interop.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_98DFC188DB734DAE8D1FBBFDB213FA6D"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1307,17 +1311,6 @@
                         {
                         }
                     }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_4460C3A22FA1452ABA642CE0960287CD"
-                    {
-                    "Name" = "8:x64"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_960262EAD76944FEB8A1CC0A98AEF620"
-                        "Folders"
-                        {
-                        }
-                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_6F9C3DB9C7F0459EBD4BD2753160253F"
                     {
                     "Name" = "8:ttc"
@@ -1340,13 +1333,13 @@
                         {
                         }
                     }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_87EEAC607AF240CEA9981E7C780439B7"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_98DFC188DB734DAE8D1FBBFDB213FA6D"
                     {
                     "Name" = "8:x86"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
-                    "Property" = "8:_63338A29D46E4147A937B11EDFA5B588"
+                    "Property" = "8:_6141BF87BCC547378E1D161BFB04403F"
                         "Folders"
                         {
                         }
@@ -1403,7 +1396,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.8.8"
         "ProductCode" = "8:{216BD49E-5570-4646-B9E5-712E0B4E9509}"
-        "PackageCode" = "8:{DC8D1A6A-CEE8-45B2-A82B-EF6E904456D2}"
+        "PackageCode" = "8:{4216109E-3913-4583-BE1E-FD7BFE94326B}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
