@@ -142,6 +142,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_93A2BA4896DB4AF9BBE77642F4BBC724"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_9A89E230A16948A6BF0347F5DBCB6521"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -180,12 +186,6 @@
         {
         "MsmKey" = "8:_BF019F04E83C769B1398EB00361D720A"
         "OwnerKey" = "8:_6C701828D9345E2F1B2B77FA1F4E65C3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C84BDFA6C5934B09B6A9DEE97665D8C8"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -820,7 +820,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7426.21953, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7485.23519, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_80751EBF800244FAE4DE3DD50EB51C14"
@@ -851,7 +851,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7426.21953, Culture=neutral, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7481.18559, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_80D394334D8F0A1DCB5CBABC7820196F"
@@ -876,6 +876,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_93A2BA4896DB4AF9BBE77642F4BBC724"
+            {
+            "SourcePath" = "8:..\\opcost\\Opcost_10_1_5.R"
+            "TargetName" = "8:Opcost_10_1_5.R"
+            "Tag" = "8:"
+            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9A89E230A16948A6BF0347F5DBCB6521"
@@ -1018,26 +1038,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C84BDFA6C5934B09B6A9DEE97665D8C8"
-            {
-            "SourcePath" = "8:..\\opcost\\10_1_4.R"
-            "TargetName" = "8:10_1_4.R"
-            "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E0D5F66D9D68F8540AB278E1E7CF5DEE"
