@@ -15,7 +15,7 @@ further details.
 ### UPDATING THE VERSION NUMBER ###
 When the version number is changed, it needs to be changed in the following files:
 
-1. USFS-PNW/Fia_Biosum_Setup Deployment Project Properties
+1. USFS-PNW/Fia_Biosum_Setup Deployment Project Properties. Don't forget to update Product Code for new version
 2. USFS-PNW/Fia_Biosum_Setup File system editor\User's Desktop shortcut name
 3. USFS-PNW/Fia_Biosum_Setup File system editor\User's Programs Menu\FIA Biosum shortcut name
 4. USFS-PNW/Fia_Biosum_Setup Property pages\Output file name
