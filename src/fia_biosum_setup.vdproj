@@ -94,12 +94,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_32E3C4B2C9CE172B59A55B836B976EA0"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_3AC04F9EEA314F45B78CF020BEC22AAF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -108,6 +102,12 @@
         {
         "MsmKey" = "8:_3B24934E344442A78DBBB0FFBCD496E9"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3D445E444880EA04FCA6AD82988880ED"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -184,8 +184,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_80751EBF800244FAE4DE3DD50EB51C14"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmKey" = "8:_7CD78F38854A4670AE65A6E01BDF964A"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -204,6 +204,12 @@
         {
         "MsmKey" = "8:_9A89E230A16948A6BF0347F5DBCB6521"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9F2DD031BFF0E7FF835E7B10FEB3E275"
+        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -323,13 +329,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_80751EBF800244FAE4DE3DD50EB51C14"
+        "OwnerKey" = "8:_3D445E444880EA04FCA6AD82988880ED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_32E3C4B2C9CE172B59A55B836B976EA0"
+        "OwnerKey" = "8:_9F2DD031BFF0E7FF835E7B10FEB3E275"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -603,7 +609,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7619.19473, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7692.20194, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_19CB48CE92BCF2A12FBC0107BFEF1BB5"
@@ -690,37 +696,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_32E3C4B2C9CE172B59A55B836B976EA0"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarBasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_32E3C4B2C9CE172B59A55B836B976EA0"
-                    {
-                    "Name" = "8:ProgressBarBasic.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProgressBarBasic.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3AC04F9EEA314F45B78CF020BEC22AAF"
             {
             "SourcePath" = "8:..\\db\\optimizer_definitions.accdb"
@@ -759,6 +734,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3D445E444880EA04FCA6AD82988880ED"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7692.20195, Culture=neutral, processorArchitecture=AMD64"
+                "ScatterAssemblies"
+                {
+                    "_3D445E444880EA04FCA6AD82988880ED"
+                    {
+                    "Name" = "8:ProgressBarEx.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProgressBarEx.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3DA1DA77560A40E4BECC65FF8072E608"
@@ -1014,23 +1020,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_80751EBF800244FAE4DE3DD50EB51C14"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7CD78F38854A4670AE65A6E01BDF964A"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7619.19473, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_80751EBF800244FAE4DE3DD50EB51C14"
-                    {
-                    "Name" = "8:ProgressBarEx.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProgressBarEx.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\db\\FVSIn.db"
+            "TargetName" = "8:FVSIn.db"
             "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1042,7 +1037,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_83A01DDBD42241183498EA2CABA9E1E0"
@@ -1114,6 +1109,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9F2DD031BFF0E7FF835E7B10FEB3E275"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProgressBarBasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
+                "ScatterAssemblies"
+                {
+                    "_9F2DD031BFF0E7FF835E7B10FEB3E275"
+                    {
+                    "Name" = "8:ProgressBarBasic.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProgressBarBasic.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9F5F09B6162F4026B8DBE52E2D8764E5"
@@ -1523,7 +1549,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.8.9"
         "ProductCode" = "8:{D05D6C56-ABF9-4B4B-968A-D2AB7116E2C8}"
-        "PackageCode" = "8:{3344D553-6FDC-4357-8AD8-2BF70933023B}"
+        "PackageCode" = "8:{973012B8-DEFB-4A15-8D57-5ADFB46F1415}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
