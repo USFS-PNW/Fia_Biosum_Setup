@@ -100,6 +100,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_38BA4C5075214C1ABD9A38D87791DC15"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3AC04F9EEA314F45B78CF020BEC22AAF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -125,12 +131,6 @@
         "Entry"
         {
         "MsmKey" = "8:_400355510F744088A673599ED8F4CEED"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_410EC8D247E84F0ABB70B8A0229F4A8E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -376,7 +376,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta589.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5810.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -496,11 +496,6 @@
             "AssemblyAsmDisplayName" = "8:SDP, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_09993502E9552A269B733789C34E5454"
-                    {
-                    "Name" = "8:SDP.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:SDP.dll"
             "TargetName" = "8:"
@@ -527,11 +522,6 @@
             "AssemblyAsmDisplayName" = "8:Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_0BDC71BA95A2850B90E26E1E81F8350B"
-                    {
-                    "Name" = "8:Interop.SHDocVw.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Interop.SHDocVw.dll"
             "TargetName" = "8:"
@@ -615,14 +605,9 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7789.28239, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.7968.26790, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_19CB48CE92BCF2A12FBC0107BFEF1BB5"
-                    {
-                    "Name" = "8:ado_data_oracle.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ado_data_oracle.dll"
             "TargetName" = "8:"
@@ -722,6 +707,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_38BA4C5075214C1ABD9A38D87791DC15"
+            {
+            "SourcePath" = "8:..\\db\\treesample.accdb"
+            "TargetName" = "8:treesample.accdb"
+            "Tag" = "8:"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3AC04F9EEA314F45B78CF020BEC22AAF"
             {
             "SourcePath" = "8:..\\db\\optimizer_definitions.accdb"
@@ -766,14 +771,9 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7789.28239, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.7968.26791, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_3D445E444880EA04FCA6AD82988880ED"
-                    {
-                    "Name" = "8:ProgressBarEx.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ProgressBarEx.dll"
             "TargetName" = "8:"
@@ -833,26 +833,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_410EC8D247E84F0ABB70B8A0229F4A8E"
-            {
-            "SourcePath" = "8:..\\db\\treesample.mdb"
-            "TargetName" = "8:treesample.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4404A1884ADFAD3A1DFB4048B9702E7A"
             {
             "AssemblyRegister" = "3:1"
@@ -860,11 +840,6 @@
             "AssemblyAsmDisplayName" = "8:FIADBOracleServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_4404A1884ADFAD3A1DFB4048B9702E7A"
-                    {
-                    "Name" = "8:FIADBOracleServices.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:FIADBOracleServices.dll"
             "TargetName" = "8:"
@@ -1002,11 +977,6 @@
             "AssemblyAsmDisplayName" = "8:FcsClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_776078B8909E85D753FFF0E3423268E7"
-                    {
-                    "Name" = "8:FcsClassLibrary.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:FcsClassLibrary.dll"
             "TargetName" = "8:"
@@ -1073,11 +1043,6 @@
             "AssemblyAsmDisplayName" = "8:StandByAnimation, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_83A01DDBD42241183498EA2CABA9E1E0"
-                    {
-                    "Name" = "8:StandByAnimation.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:StandByAnimation.dll"
             "TargetName" = "8:"
@@ -1144,11 +1109,6 @@
             "AssemblyAsmDisplayName" = "8:ProgressBarBasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_9F2DD031BFF0E7FF835E7B10FEB3E275"
-                    {
-                    "Name" = "8:ProgressBarBasic.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ProgressBarBasic.dll"
             "TargetName" = "8:"
@@ -1573,20 +1533,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.8.9"
-        "ProductCode" = "8:{D05D6C56-ABF9-4B4B-968A-D2AB7116E2C8}"
-        "PackageCode" = "8:{973012B8-DEFB-4A15-8D57-5ADFB46F1415}"
+        "ProductName" = "8:FIA Biosum 5.8.10"
+        "ProductCode" = "8:{A84D854C-EC33-4AB8-AEB8-00960671A8FE}"
+        "PackageCode" = "8:{027C5384-18D2-4107-8160-246E1513F02F}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.8.9"
+        "ProductVersion" = "8:5.8.10"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:(503)808-2079"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.8.9"
+        "Title" = "8:FIA Biosum Setup 5.8.10"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Larry Potts"
         "Keywords" = "8:"
@@ -1697,7 +1657,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.8.9"
+            "Name" = "8:FIA Biosum Manager 5.8.10"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1711,7 +1671,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.8.9"
+            "Name" = "8:FIA Biosum Manager 5.8.10"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
