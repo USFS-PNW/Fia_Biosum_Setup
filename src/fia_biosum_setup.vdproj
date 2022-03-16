@@ -22,6 +22,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_06CCB5FA2AA44B7B91E9999EE0A5B2EF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_09993502E9552A269B733789C34E5454"
         "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "MsmSig" = "8:_UNDEFINED"
@@ -52,24 +58,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_19CB48CE92BCF2A12FBC0107BFEF1BB5"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_19CB48CE92BCF2A12FBC0107BFEF1BB5"
-        "OwnerKey" = "8:_4404A1884ADFAD3A1DFB4048B9702E7A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_19CB48CE92BCF2A12FBC0107BFEF1BB5"
-        "OwnerKey" = "8:_776078B8909E85D753FFF0E3423268E7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -82,19 +70,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_2FFCE57982524E5E817259B521CBBE63"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_31A48AD241FA4EB9B38BD4ACEDF5BB45"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_34D2D4D8B1F642ADB76BC08A84B91547"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -130,14 +106,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_400355510F744088A673599ED8F4CEED"
+        "MsmKey" = "8:_3EBA74E0EE0A4FA197C0C41830A75776"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4404A1884ADFAD3A1DFB4048B9702E7A"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
+        "MsmKey" = "8:_400355510F744088A673599ED8F4CEED"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -168,18 +144,6 @@
         {
         "MsmKey" = "8:_6EEE68E309E94F7680BA4D5F0EB3BE77"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_776078B8909E85D753FFF0E3423268E7"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_776078B8909E85D753FFF0E3423268E7"
-        "OwnerKey" = "8:_4404A1884ADFAD3A1DFB4048B9702E7A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -256,6 +220,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D4AF9008B29140CB87D891AB0BDADFC3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E426D5C09F8B474BB2DFCA60184DA03C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -276,6 +246,12 @@
         {
         "MsmKey" = "8:_EF3967812C28E91DD022458518ABAD8E"
         "OwnerKey" = "8:_0BDC71BA95A2850B90E26E1E81F8350B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F6633EE3A8864EEEA9122F9CBFCF5B59"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -347,25 +323,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4404A1884ADFAD3A1DFB4048B9702E7A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0BDC71BA95A2850B90E26E1E81F8350B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_776078B8909E85D753FFF0E3423268E7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_19CB48CE92BCF2A12FBC0107BFEF1BB5"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -475,6 +433,26 @@
             "TargetName" = "8:ref_fvscommands.mdb"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_06CCB5FA2AA44B7B91E9999EE0A5B2EF"
+            {
+            "SourcePath" = "8:..\\fcs\\BiosumComps.jar"
+            "TargetName" = "8:BiosumComps.jar"
+            "Tag" = "8:"
+            "Folder" = "8:_1260A41B4EFE451791D9568A676E24BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -611,37 +589,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_19CB48CE92BCF2A12FBC0107BFEF1BB5"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ado_data_oracle, Version=1.0.8061.19734, Culture=neutral, processorArchitecture=AMD64"
-                "ScatterAssemblies"
-                {
-                    "_19CB48CE92BCF2A12FBC0107BFEF1BB5"
-                    {
-                    "Name" = "8:ado_data_oracle.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ado_data_oracle.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2B32A3BBAAC5441D9FD462AD4156DF80"
             {
             "SourcePath" = "8:..\\db\\utils.mdb"
@@ -662,52 +609,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2FFCE57982524E5E817259B521CBBE63"
-            {
-            "SourcePath" = "8:..\\fcs\\BioSumComps.jar"
-            "TargetName" = "8:BioSumComps.jar"
-            "Tag" = "8:"
-            "Folder" = "8:_1260A41B4EFE451791D9568A676E24BC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_31A48AD241FA4EB9B38BD4ACEDF5BB45"
             {
             "SourcePath" = "8:..\\db\\print_report_wizard_user_select.xsd"
             "TargetName" = "8:print_report_wizard_user_select.xsd"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_34D2D4D8B1F642ADB76BC08A84B91547"
-            {
-            "SourcePath" = "8:..\\fcs\\FCS_BIOSUM_ModifyBiomassColumns.bat"
-            "TargetName" = "8:FCS_BIOSUM_ModifyBiomassColumns.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_1260A41B4EFE451791D9568A676E24BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -786,7 +693,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8061.19735, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8109.27436, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -833,6 +740,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3EBA74E0EE0A4FA197C0C41830A75776"
+            {
+            "SourcePath" = "8:..\\fcs\\BiosumSpeciesConfig.db"
+            "TargetName" = "8:BiosumSpeciesConfig.db"
+            "Tag" = "8:"
+            "Folder" = "8:_1260A41B4EFE451791D9568A676E24BC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_400355510F744088A673599ED8F4CEED"
             {
             "SourcePath" = "8:..\\fcs\\fcs_tree.db"
@@ -851,37 +778,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4404A1884ADFAD3A1DFB4048B9702E7A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:FIADBOracleServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
-                "ScatterAssemblies"
-                {
-                    "_4404A1884ADFAD3A1DFB4048B9702E7A"
-                    {
-                    "Name" = "8:FIADBOracleServices.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:FIADBOracleServices.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4C7D7A7FFF52AB07977BB701850179CF"
@@ -993,37 +889,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_776078B8909E85D753FFF0E3423268E7"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:FcsClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
-                "ScatterAssemblies"
-                {
-                    "_776078B8909E85D753FFF0E3423268E7"
-                    {
-                    "Name" = "8:FcsClassLibrary.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:FcsClassLibrary.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7A2B91BCCEE740218882709A0883C0D5"
@@ -1279,6 +1144,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D4AF9008B29140CB87D891AB0BDADFC3"
+            {
+            "SourcePath" = "8:..\\scripts\\BioSum_Keywords.kcp"
+            "TargetName" = "8:BioSum_Keywords.kcp"
+            "Tag" = "8:"
+            "Folder" = "8:_1D9B0663FFEA4293A1722A3E7EAE460D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E426D5C09F8B474BB2DFCA60184DA03C"
             {
             "SourcePath" = "8:..\\Help\\Help.xsd"
@@ -1357,6 +1242,26 @@
             "Register" = "3:4"
             "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F6633EE3A8864EEEA9122F9CBFCF5B59"
+            {
+            "SourcePath" = "8:..\\scripts\\POTFIRE_Keywords.kcp"
+            "TargetName" = "8:POTFIRE_Keywords.kcp"
+            "Tag" = "8:"
+            "Folder" = "8:_1D9B0663FFEA4293A1722A3E7EAE460D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F758277880CA44D7AFB5E5586FF7DEA6"
@@ -1453,6 +1358,17 @@
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
                     "Property" = "8:_0EB3063F9A2D44139B8FE4FCFBFABC94"
+                        "Folders"
+                        {
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_1D9B0663FFEA4293A1722A3E7EAE460D"
+                    {
+                    "Name" = "8:scripts"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_C84CCB2E11C643BCA4416E6362DFDDE8"
                         "Folders"
                         {
                         }
@@ -1575,7 +1491,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.8.10"
         "ProductCode" = "8:{A84D854C-EC33-4AB8-AEB8-00960671A8FE}"
-        "PackageCode" = "8:{2FADA2F4-DC41-44DD-BF6C-F25628FD2D68}"
+        "PackageCode" = "8:{7E0F170E-B065-464C-B19A-BA34DAB07D22}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
