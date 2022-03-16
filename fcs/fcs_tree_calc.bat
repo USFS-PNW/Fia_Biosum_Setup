@@ -5,7 +5,9 @@ SET SHOWMSG=%1
 
 IF EXIST "%APPDATA%"\FIABiosum\fcs_error_msg.txt DEL "%APPDATA%"\FIABiosum\fcs_error_msg.txt
 
-CALL JAVA.EXE -jar "%APPDATA%"/FIABiosum/BiosumComps.jar "%APPDATA%"/FIABiosum/FCS_TREE.DB
+CALL "%JAVA_HOME%"\bin\JAVA.EXE -jar "%APPDATA%"/FIABiosum/BiosumComps.jar -tc "%APPDATA%"/FIABiosum/BiosumSpeciesConfig.db ^
+               -td "%APPDATA%"/FIABiosum/fcs_tree.db -tdt biosum_calc
+
 SET ERRNUM=%ERRORLEVEL%
 
 IF "%ERRNUM%"=="1" GOTO tryagain
@@ -39,10 +41,11 @@ del %tmp%\biosum_err_msg.vbs
 GOTO exit
 
 :errjava
-echo msgbox "Problem detected running JAVA.EXE" + CHR(13) + "32-bit requirements" + CHR(13) + "-----------------------" + CHR(13) + "Install Java 8 Update 251" + CHR(13) + "Install JDK1.8" + CHR(13) + CHR(13) +  "64-bit requirements" + CHR(13) + "-----------------------" + CHR(13) + "Install Java 8 Update 251" + CHR(13) + "Install Oracle 64bit Client" + CHR(13) + "Install JDK1.8 (optional)",0,"FCS Volume and Biomass Compiler" > %tmp%\biosum_err_msg.vbs
+Rem This section requires a specific version/location for the JDK
+echo msgbox "Problem detected running JAVA.EXE" + CHR(13) + "64-bit requirements" + CHR(13) + "-----------------------" + CHR(13) + "Install Java 8 Update 251" + CHR(13) + "Install Oracle 64bit Client" + CHR(13) + "Install JDK1.8 (optional)",0,"FCS Volume and Biomass Compiler" > %tmp%\biosum_err_msg.vbs
 IF "%SHOWMSG%"=="Y" wscript %tmp%\biosum_err_msg.vbs
 del %tmp%\biosum_err_msg.vbs
-echo Problem detected running JAVA.EXE\r\n32-bit requirements\r\n-----------------------\r\nInstall Java 8 Update 251\r\nInstall JDK1.8\r\n\r\n64-bit requirements\r\n-----------------------\r\nInstall Java 8 Update 251\r\nInstall Oracle 64bit Client\r\nInstall JDK1.8 (optional)>"%APPDATA%"\FIABiosum\fcs_error_msg.txt
+echo Problem detected running JAVA.EXE\r\n64-bit requirements\r\n-----------------------\r\nInstall Java 8 Update 251\r\nInstall Oracle 64bit Client\r\nInstall JDK1.8 (optional)>"%APPDATA%"\FIABiosum\fcs_error_msg.txt
 GOTO exit
 
 :errunk
