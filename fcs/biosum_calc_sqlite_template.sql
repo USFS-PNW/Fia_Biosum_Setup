@@ -63,4 +63,5 @@ create table biosum_calc (
 create index biosum_calc_plt_cn on biosum_calc (plt_cn);
 create index biosum_calc_cnd_cn on biosum_calc (cnd_cn);
 create unique index biosum_calc_tre_cn on biosum_calc (tre_cn);
+create index biosum_calc_tree on biosum_calc (tree);
 
