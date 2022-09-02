@@ -5,9 +5,12 @@
 !!****************************************************
 
 !!The default TIME-related keywords below are parameterized 
-!!for 10-year cycles and inclusion of the POTFIRE table. See the
+!!for 10-year cycles and to accommodate the inclusion of a BASEYR
+!!representation in lieu of year 1 for tables such as POTFIRE that 
+!!report only after-treatment stand attributes. See the
 !!BioSum User Guide FVS chapter for additional guidance on 
 !!alternative TIME keyword configurations.
+
 
 InvYear            1
 
@@ -21,7 +24,7 @@ Timeint            7         1
 Timeint            8         8
 Timeint            9         1
 Timeint           10         1
-Timeint           11         9
+Timeint           11         8
 
 NUMCYCLE          11
 
@@ -51,23 +54,37 @@ ATRTLIST           0        3.         0
 !!Output Tree Structural Statistics
 StrClass           1       30.        5.       25.        5.      200.       30.
  
-!!Turn-off tripling
+!!Turn-off FVS tree record tripling
 NoTriple
- 
+
+!!Generate FVS_COMPUTE table and populate Activity field 
+!!with value of 0 in every year/cycle by default
+COMPUTE            0           
+ACTIVITY = 0
+END
+
+!!For treatments that incur costs but do not involve cutting trees 
+!!(e.g., broadcast or pile burn) the user must set up a flag in the 
+!!Activity field of the FVS_COMPUTE table using an extended version 
+!!of the keywords listed above this comment.
+!!See "Accounting for costs of treatments that don't result in harvested trees"
+!!in the BioSum User Guide FVS Chapter for additional guidance (~ Page 31).
+
+
 !!************************************************
 !!**Output Table Keywords
 !!************************************************
 DataBase
 !!FVS_Summary (REQUIRED)
 SUMMARY
+!!FVS_Treelist (REQUIRED)
+TREELIDB
 !!FVS_Cutlist (REQUIRED)
 CUTLIDB
-!!FVS_ATRTLIST (RECOMMENDED)
-ATRTLIDB
-!!FVS_Treelist (RECOMMENDED)
-TREELIDB
 !!FVS_StrClass (RECOMMENDED)
 STRCLSDB
+!!FVS_ATRTLIST (OPTIONAL)
+ATRTLIDB
 !!FVS_Carbon & FVS_Hrv_Carbon (OPTIONAL)
 CARBREDB
 !!FVS_Potfire (OPTIONAL)
