@@ -226,6 +226,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D68EFF6E0FFD4A9CA7441FAE776AE1A7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E426D5C09F8B474BB2DFCA60184DA03C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -334,7 +340,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta590.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5100.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -693,7 +699,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8126.20266, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8297.26398, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -1164,6 +1170,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D68EFF6E0FFD4A9CA7441FAE776AE1A7"
+            {
+            "SourcePath" = "8:..\\images\\favicon.ico"
+            "TargetName" = "8:favicon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_325C3236DA9F454892A5AEC5AE5D63C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E426D5C09F8B474BB2DFCA60184DA03C"
             {
             "SourcePath" = "8:..\\Help\\Help.xsd"
@@ -1489,22 +1515,22 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.9.0"
-        "ProductCode" = "8:{FAE77506-DCB2-4DF2-B189-8CC3133D7C87}"
-        "PackageCode" = "8:{338E4577-9167-4733-8F2C-F68895E28E99}"
+        "ProductName" = "8:FIA Biosum 5.10.0"
+        "ProductCode" = "8:{36ECD65B-0279-4FE6-98D5-6D6754706FB4}"
+        "PackageCode" = "8:{0BAABBB9-4AA1-4655-9DEC-17A5E2C1D013}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.9.0"
+        "ProductVersion" = "8:5.10.0"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
-        "ARPHELPTELEPHONE" = "8:(503)808-2079"
+        "ARPHELPTELEPHONE" = "8:503-386-5669"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.9.0"
+        "Title" = "8:FIA Biosum Setup 5.10.0"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Larry Potts"
+        "ARPCONTACT" = "8:Lesley Bross and Larry Potts"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -1613,7 +1639,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.9.0"
+            "Name" = "8:FIA Biosum Manager 5.10.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1622,12 +1648,12 @@
             "Target" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
             "Folder" = "8:_0D1818CEF5354BF084619C92ED1FDD2E"
             "WorkingFolder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Icon" = "8:"
+            "Icon" = "8:_D68EFF6E0FFD4A9CA7441FAE776AE1A7"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.9.0"
+            "Name" = "8:FIA Biosum Manager 5.10.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1636,7 +1662,7 @@
             "Target" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
             "Folder" = "8:_6A3C4CAF1130408EA0B158D0DE49A416"
             "WorkingFolder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Icon" = "8:"
+            "Icon" = "8:_D68EFF6E0FFD4A9CA7441FAE776AE1A7"
             "Feature" = "8:"
             }
         }
