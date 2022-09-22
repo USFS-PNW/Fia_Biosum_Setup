@@ -3,33 +3,31 @@
 !!****************************************************
 !!**TIME: Number Of Cycles and Years Between Cycles
 !!****************************************************
-
 !!The default TIME-related keywords below are parameterized 
-!!for 10-year cycles and to accommodate the inclusion of a BASEYR
-!!representation in lieu of year 1 for tables such as POTFIRE that 
+!!for 10-year cycles and to accommodate the inclusion of
+!!pre-treatment values in Cycle 1 for FFE tables (e.g., POTFIRE) that 
 !!report only after-treatment stand attributes. See the
 !!BioSum User Guide FVS chapter for additional guidance on 
 !!alternative TIME keyword configurations.
 
-
 InvYear            1
-
 Timeint            1         1
-Timeint            2         8
-Timeint            3         1
+Timeint            2         1
+Timeint            3         8
 Timeint            4         1
-Timeint            5         8
-Timeint            6         1
+Timeint            5         1
+Timeint            6         8
 Timeint            7         1
-Timeint            8         8
-Timeint            9         1
+Timeint            8         1
+Timeint            9         8
 Timeint           10         1
-Timeint           11         8
-
-NUMCYCLE          11
+Timeint           11         1
+Timeint           12         8
+Timeint           13         1
+NUMCYCLE          13
 
 !!************************************************
-!!**Fuel And Fire Extension Keywords
+!!**Fuel And Fire Extension Settings/Outputs
 !!************************************************
 
 FMIn
@@ -37,32 +35,41 @@ PotFire            0       40.        1.
 BurnRept					 1      200.
 CarbRept           1      200.        1.
 CarbCut            1      200.				1.
+FUELOUT
+MortRept
+SnagSum
+SnagOut            0       200                  35         0
+DWDCvOut
+DWDVlOut
 End
 
 !!************************************************
-!!**Output Tree Data Options
+!!**Output Data Options/Settings
 !!************************************************
-!!Output Treelist
+
+!!Treelist settings
 TreeList           0        3.         0         0         0         0         0
  
-!!Output Cutlist
+!!Cutlist settings
 CutList            0        3.         0                             0
  
-!!Output After Treatment Tree List File
+!!After Treatment Tree List File settings
 ATRTLIST           0        3.         0
  
-!!Output Tree Structural Statistics
+!!Tree Structural Statistics settings
 StrClass           1       30.        5.       25.        5.      200.       30.
  
 !!Turn-off FVS tree record tripling
 NoTriple
+
+!!Initiate stats table outputs if also called from database keywords
+Stats            .05
 
 !!Generate FVS_COMPUTE table and populate Activity field 
 !!with value of 0 in every year/cycle by default
 COMPUTE            0           
 ACTIVITY = 0
 END
-
 !!For treatments that incur costs but do not involve cutting trees 
 !!(e.g., broadcast or pile burn) the user must set up a flag in the 
 !!Activity field of the FVS_COMPUTE table using an extended version 
@@ -70,29 +77,61 @@ END
 !!See "Accounting for costs of treatments that don't result in harvested trees"
 !!in the BioSum User Guide FVS Chapter for additional guidance (~ Page 31).
 
-
 !!************************************************
 !!**Output Table Keywords
 !!************************************************
+
+!!To include or exclude tables from the FVS output file (FVSOut.db)
+!!remove the * (comment) prior to the table keyword to include
+!!or insert * (comment) prior to the table keyword to exclude
+!!Consult the FVS Database Extension Guide for more info on each table
+
 DataBase
 !!FVS_Summary (REQUIRED)
 SUMMARY
-!!FVS_Treelist (REQUIRED)
-TREELIDB
 !!FVS_Cutlist (REQUIRED)
 CUTLIDB
-!!FVS_StrClass (RECOMMENDED)
-STRCLSDB
-!!FVS_ATRTLIST (OPTIONAL)
-ATRTLIDB
-!!FVS_Carbon & FVS_Hrv_Carbon (OPTIONAL)
-CARBREDB
 !!FVS_Potfire (OPTIONAL)
-POTFIRDB
+*POTFIRDB
+!!FVS_StrClass (OPTIONAL)
+*STRCLSDB
+!!FVS_Treelist (OPTIONAL)
+*TREELIDB
+!!FVS_ATRTLIST (OPTIONAL)
+*ATRTLIDB
+!!FVS_Fuels (OPTIONAL)
+*FUELSOUT
+!!FVS_Carbon & FVS_Hrv_Carbon (OPTIONAL)
+*CARBREDB
+!!FVS_Down_Wood_Cov (OPTIONAL)
+*DWDCVDB
+!!FVS_Down_Wood_Vol (OPTIONAL)
+*DWDVLDB
 !!FVS_BurnReport (OPTIONAL)
-BURNREDB
+*BURNREDB
+!!FVS_Consumption (OPTIONAL)
+*FuelReDB
+!!FVS_Mortality (OPTIONAL)
+*dbsfmmort
+!!FVS_Regen_Sprouts and FVS_Regen_Tally (OPTIONAL)
+*REGREPTS
+!!FVS_Stats_Species and FVS_Stats_Stand (OPTIONAL)
+*INVSTATS
+!!FVS_CalibStats (OPTIONAL)
+*CALBSTDB
+!!FVS_SnagSum (OPTIONAL)
+*SNAGSUDB
+!!FVS_SnagDet (OPTIONAL)
+*SNAGOUDB          
+!!FVS_DM_Spp_Sum, FVS_DM_Stnd_Sum, FVS_DM_Sz_Sum (OPTIONAL)
+*MISRPTS
+!!FVS_Climate (OPTIONAL)
+*CLIMREDB
+!!FVS_EconSummary, FVS_EconHarvestValue
+*ECONRPTS
 
 End
+
 !!************************************************
 !!End of FIA Biosum Generated Code!!
 !!************************************************
