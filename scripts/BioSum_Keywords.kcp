@@ -3,13 +3,13 @@
 !!****************************************************
 !!**TIME: Number Of Cycles and Years Between Cycles
 !!****************************************************
+
 !!The default TIME-related keywords below are parameterized 
 !!for 10-year cycles and to accommodate the inclusion of
 !!pre-treatment values in Cycle 1 for FFE tables (e.g., POTFIRE) that 
 !!report only after-treatment stand attributes. See the
 !!BioSum User Guide FVS chapter for additional guidance on 
 !!alternative TIME keyword configurations.
-
 InvYear            1
 Timeint            1         1
 Timeint            2         1
@@ -80,11 +80,11 @@ END
 !!************************************************
 !!**Output Table Keywords
 !!************************************************
-
 !!To include or exclude tables from the FVS output file (FVSOut.db)
 !!remove the * (comment) prior to the table keyword to include
 !!or insert * (comment) prior to the table keyword to exclude
 !!Consult the FVS Database Extension Guide for more info on each table
+!!and potential additional keyword requirements
 
 DataBase
 !!FVS_Summary (REQUIRED)
@@ -110,9 +110,9 @@ CUTLIDB
 !!FVS_BurnReport (OPTIONAL)
 *BURNREDB
 !!FVS_Consumption (OPTIONAL)
-*FuelReDB
+*FUELREDB
 !!FVS_Mortality (OPTIONAL)
-*dbsfmmort
+*MORTREDB
 !!FVS_Regen_Sprouts and FVS_Regen_Tally (OPTIONAL)
 *REGREPTS
 !!FVS_Stats_Species and FVS_Stats_Stand (OPTIONAL)
@@ -129,7 +129,6 @@ CUTLIDB
 *CLIMREDB
 !!FVS_EconSummary, FVS_EconHarvestValue
 *ECONRPTS
-
 End
 
 !!************************************************
