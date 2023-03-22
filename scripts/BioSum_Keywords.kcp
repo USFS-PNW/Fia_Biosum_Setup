@@ -10,6 +10,7 @@
 !!report only after-treatment stand attributes. See the
 !!BioSum User Guide FVS chapter for additional guidance on 
 !!alternative TIME keyword configurations.
+
 InvYear            1
 Timeint            1         1
 Timeint            2         1
@@ -30,18 +31,20 @@ NUMCYCLE          13
 !!**Fuel And Fire Extension Settings/Outputs
 !!************************************************
 
+*Set FFE settings
 FMIn
 PotFire            0       40.        1.
 BurnRept					 1      200.
 CarbRept           1      200.        1.
 CarbCut            1      200.				1.
 FUELOUT
+FUELREPT
 MortRept
 SnagSum
 SnagOut            0       200                  35         0
 DWDCvOut
 DWDVlOut
-End
+END
 
 !!************************************************
 !!**Output Data Options/Settings
@@ -65,17 +68,8 @@ NoTriple
 !!Initiate stats table outputs if also called from database keywords
 Stats            .05
 
-!!Generate FVS_COMPUTE table and populate Activity field 
-!!with value of 0 in every year/cycle by default
-COMPUTE            0           
-ACTIVITY = 0
-END
-!!For treatments that incur costs but do not involve cutting trees 
-!!(e.g., broadcast or pile burn) the user must set up a flag in the 
-!!Activity field of the FVS_COMPUTE table using an extended version 
-!!of the keywords listed above this comment.
-!!See "Accounting for costs of treatments that don't result in harvested trees"
-!!in the BioSum User Guide FVS Chapter for additional guidance (~ Page 31).
+!!Prevents FVS-induced tree mortality in the first cycle only (Inventory Year Record)
+FixMort            1       All       0.0       0.0     999.0         0         0
 
 !!************************************************
 !!**Output Table Keywords
