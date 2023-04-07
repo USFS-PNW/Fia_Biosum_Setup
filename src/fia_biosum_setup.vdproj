@@ -16,12 +16,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_010F15093F7C4C3E8A3F4364FD3672A5"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_06CCB5FA2AA44B7B91E9999EE0A5B2EF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -214,12 +208,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BE554CE5E366427085DD080DC9C0BA9C"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_D4AF9008B29140CB87D891AB0BDADFC3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -257,12 +245,6 @@
         "Entry"
         {
         "MsmKey" = "8:_F758277880CA44D7AFB5E5586FF7DEA6"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FA4710560CFA473185D26DDCC1BC4993"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -427,26 +409,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_010F15093F7C4C3E8A3F4364FD3672A5"
-            {
-            "SourcePath" = "8:..\\db\\ref_fvscommands.mdb"
-            "TargetName" = "8:ref_fvscommands.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_06CCB5FA2AA44B7B91E9999EE0A5B2EF"
             {
             "SourcePath" = "8:..\\fcs\\BiosumComps.jar"
@@ -703,7 +665,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8468.19059, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8495.30595, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                 }
@@ -1094,26 +1056,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BE554CE5E366427085DD080DC9C0BA9C"
-            {
-            "SourcePath" = "8:..\\images\\usfspfsl.jpg"
-            "TargetName" = "8:usfspfsl.jpg"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D4AF9008B29140CB87D891AB0BDADFC3"
             {
             "SourcePath" = "8:..\\scripts\\BioSum_Keywords.kcp"
@@ -1250,26 +1192,6 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FA4710560CFA473185D26DDCC1BC4993"
-            {
-            "SourcePath" = "8:..\\lib\\FIABiosum_GIS.dll"
-            "TargetName" = "8:FIABiosum_GIS.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:4"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
