@@ -47,7 +47,7 @@ DWDVlOut
 END
 
 !!************************************************
-!!**Output Data Options/Settings
+!!**FVS Parameters & Output Data Settings
 !!************************************************
 
 !!Treelist settings
@@ -61,15 +61,25 @@ ATRTLIST           0        3.         0
  
 !!Tree Structural Statistics settings
 StrClass           1       30.        5.       25.        5.      200.       30.
- 
-!!Turn-off FVS tree record tripling
-NoTriple
 
 !!Initiate stats table outputs if also called from database keywords
 Stats            .05
 
+!!Turn-off FVS tree record tripling
+NoTriple
+
 !!Prevents FVS-induced tree mortality in the first cycle only (Inventory Year Record)
 FixMort            1       All       0.0       0.0     999.0         0         0
+
+!!Sets the SDI calculation method from Reineke's (default) to Zeide's with 1" DBH cap.
+!!This prevents FVS from resetting user-specified or PVCODE-specified SDIMAX
+!!when stand TPA is very high at Inventory Year, usually caused by thousands of seedlings/saplings
+SDICalc            1         1         1
+
+!!Lowers the SDI-related mortality model's upper limit of density related mortality
+!!from 85% (default) to 75% for all species
+!!This helps prevent FVS from underestimating density-related tree mortality and overestimating growth
+SDIMax           All                                      55        75
 
 !!************************************************
 !!**Output Table Keywords
