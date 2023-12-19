@@ -1,22 +1,58 @@
-!!**Number Of Cycles and Years Between Cycles
+!!***************************************************
+!!**BASEYR RUN                      
 !!****************************************************
+!!**TIME: Number Of Cycles and Years Between Cycles
+!!****************************************************
+
+!!This runs with no management for 1 year to build output for a BASEYEAR analysis for POTFIRE 
+!!This is ONLY needed if needing to run analysis with the BASEYEAR option, which works ONLY with the
+!!POTFIRE table. This option allows treatments to occur in year 1 of the simulation, and the 
+!!BASEYEAR run is used to get the pre-treatment values of POTFIRE attributes for use, typically,
+!!in a Pre-Post analysis in BioSum where that is needed. It is NOT the recommended approach.
+!!The standard approach is to have year 2 be the first year in which any treatment occurs;
+!!That way, the year 1 values WILL hold pre-treatment attributes for POTFIRE (and for all
+!!other tables that follow the FFE/POTFIRE timing pattern).
+
 InvYear            1
-Timeint            1        1
+Timeint            1         1
 NUMCYCLE           1
+
 !!************************************************
-!!**Fuel And Fire Extension Keywords
+!!**Fuel And Fire Extension Settings/Outputs
 !!************************************************
+
+*Set FFE settings
 FMIn
-PotFire            0        1.        0.
-End
+PotFire            0       40.        1.
+END
+
+!!************************************************
+!!**Output Data Options/Settings
+!!************************************************
+
+!!Turn-off FVS tree record tripling
+NoTriple
+
+!!Prevents FVS-induced tree mortality in the first cycle only (Inventory Year Record)
+FixMort            1       All       0.0       0.0     999.0         0         0
+
 !!************************************************
 !!**Output Table Keywords
 !!************************************************
+!!To include or exclude tables from the FVS output file (FVSOut.db)
+!!remove the * (comment) prior to the table keyword to include
+!!or insert * (comment) prior to the table keyword to exclude
+!!Consult the FVS Database Extension Guide for more info on each table
+!!and potential additional keyword requirements
 
 DataBase
-!!FVS_Potfire 
+!!FVS_Summary (REQUIRED)
+SUMMARY
+!!FVS_Potfire (OPTIONAL)
 POTFIRDB
+
 End
+
 !!************************************************
 !!End of FIA Biosum Generated Code!!
 !!************************************************
