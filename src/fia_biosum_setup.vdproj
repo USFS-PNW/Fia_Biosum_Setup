@@ -28,12 +28,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0BDC71BA95A2850B90E26E1E81F8350B"
-        "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_0C08A43EF78E40EEAED08E3D1B3733C0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -83,12 +77,6 @@
         "Entry"
         {
         "MsmKey" = "8:_38BA4C5075214C1ABD9A38D87791DC15"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_3AC04F9EEA314F45B78CF020BEC22AAF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -172,12 +160,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_93A2BA4896DB4AF9BBE77642F4BBC724"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_9A89E230A16948A6BF0347F5DBCB6521"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -196,13 +178,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A6E0B8B5888347FA9EA58C273765B155"
+        "MsmKey" = "8:_A1D68058F85E4B8D92F0012D5928C86D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_AED6CCC13DC74A9398882001B359D6B2"
+        "MsmKey" = "8:_A6E0B8B5888347FA9EA58C273765B155"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -268,12 +250,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EF3967812C28E91DD022458518ABAD8E"
-        "OwnerKey" = "8:_0BDC71BA95A2850B90E26E1E81F8350B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F758277880CA44D7AFB5E5586FF7DEA6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -332,12 +308,6 @@
         "OwnerKey" = "8:_DE42A900AEC9FFF5168624E8CA76568E"
         "MsmSig" = "8:_UNDEFINED"
         }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0BDC71BA95A2850B90E26E1E81F8350B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -346,7 +316,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5101.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5110.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -473,37 +443,6 @@
                     }
                 }
             "SourcePath" = "8:SDP.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0BDC71BA95A2850B90E26E1E81F8350B"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=AMD64"
-                "ScatterAssemblies"
-                {
-                    "_0BDC71BA95A2850B90E26E1E81F8350B"
-                    {
-                    "Name" = "8:Interop.SHDocVw.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Interop.SHDocVw.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
@@ -681,26 +620,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3AC04F9EEA314F45B78CF020BEC22AAF"
-            {
-            "SourcePath" = "8:..\\db\\optimizer_definitions.accdb"
-            "TargetName" = "8:optimizer_definitions.accdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3B24934E344442A78DBBB0FFBCD496E9"
             {
             "SourcePath" = "8:..\\db\\biosum_ref.accdb"
@@ -725,7 +644,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8872.18837, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8879.23752, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -994,26 +913,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_93A2BA4896DB4AF9BBE77642F4BBC724"
-            {
-            "SourcePath" = "8:..\\opcost\\Opcost_10_1_5.R"
-            "TargetName" = "8:Opcost_10_1_5.R"
-            "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9A89E230A16948A6BF0347F5DBCB6521"
             {
             "SourcePath" = "8:..\\db\\personal_project_links_and_notes.mdb"
@@ -1085,12 +984,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A6E0B8B5888347FA9EA58C273765B155"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A1D68058F85E4B8D92F0012D5928C86D"
             {
-            "SourcePath" = "8:..\\opcost\\Opcost_10_1_6.R"
-            "TargetName" = "8:Opcost_10_1_6.R"
+            "SourcePath" = "8:..\\db\\optimizer_definitions.db"
+            "TargetName" = "8:optimizer_definitions.db"
             "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1105,12 +1004,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AED6CCC13DC74A9398882001B359D6B2"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A6E0B8B5888347FA9EA58C273765B155"
             {
-            "SourcePath" = "8:..\\db\\opcost_ref.accdb"
-            "TargetName" = "8:opcost_ref.accdb"
+            "SourcePath" = "8:..\\opcost\\Opcost_10_1_6.R"
+            "TargetName" = "8:Opcost_10_1_6.R"
             "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1314,26 +1213,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EF3967812C28E91DD022458518ABAD8E"
-            {
-            "SourcePath" = "8:ieframe.dll"
-            "TargetName" = "8:ieframe.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_285A021D2BF44279BC5777E48A566ED9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:4"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F758277880CA44D7AFB5E5586FF7DEA6"
@@ -1541,20 +1420,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.10.1"
-        "ProductCode" = "8:{929B531E-2B06-4CF3-8E90-76642F34EFB2}"
-        "PackageCode" = "8:{9802EF25-6761-4A89-B816-FE117C73EDC9}"
+        "ProductName" = "8:FIA Biosum 5.11.0"
+        "ProductCode" = "8:{8C10DFED-0E34-4CED-89E5-C63ACCF165CE}"
+        "PackageCode" = "8:{F5F08700-E607-4A5D-AA35-3C86C5F1A147}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.10.1"
+        "ProductVersion" = "8:5.11.0"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:503-386-5669"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.10.0"
+        "Title" = "8:FIA Biosum Setup 5.11.0"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Lesley Bross and Larry Potts"
         "Keywords" = "8:"
@@ -1665,7 +1544,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.10.1"
+            "Name" = "8:FIA Biosum Manager 5.11.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1679,7 +1558,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.10.1"
+            "Name" = "8:FIA Biosum Manager 5.11.0"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
