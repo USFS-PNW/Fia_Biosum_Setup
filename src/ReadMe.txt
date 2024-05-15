@@ -27,3 +27,4 @@ When the version number is changed, it needs to be changed in the following file
 9. Always place a current copy of this file in USFS-PNW/Fia_Biosum_Setup/db so that the build can find it
 10. If biosum_ref.accdb is updated, REF_VERSION.version_num needs to be incremented
 11. USFS-PNW/Fia-Biosum-Manager src\frmMain g_intRefDbVer variable needs to match REF_VERSION.version_num
+12: Sign the .msi if it is for wide distribution
