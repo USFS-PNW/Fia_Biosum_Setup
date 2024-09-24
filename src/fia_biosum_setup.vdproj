@@ -316,7 +316,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5110.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5111.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -644,7 +644,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.8879.23752, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9033.19940, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -1420,20 +1420,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.11.0"
-        "ProductCode" = "8:{8C10DFED-0E34-4CED-89E5-C63ACCF165CE}"
-        "PackageCode" = "8:{F5F08700-E607-4A5D-AA35-3C86C5F1A147}"
+        "ProductName" = "8:FIA Biosum 5.11.1"
+        "ProductCode" = "8:{69B9963C-EFAA-4E1C-AD13-25A99888BD7F}"
+        "PackageCode" = "8:{5DE84552-F71A-4AEC-B429-25398148AF15}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.11.0"
+        "ProductVersion" = "8:5.11.1"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:503-386-5669"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.11.0"
+        "Title" = "8:FIA Biosum Setup 5.11.1"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Lesley Bross and Larry Potts"
         "Keywords" = "8:"
@@ -1544,7 +1544,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.11.0"
+            "Name" = "8:FIA Biosum Manager 5.11.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1558,7 +1558,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.11.0"
+            "Name" = "8:FIA Biosum Manager 5.11.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
