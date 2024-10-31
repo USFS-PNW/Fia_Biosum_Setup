@@ -400,7 +400,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:.NETFramework,Version=v4.6"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.8"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=9832"
                 "SupportedRuntimes" = "8:1.1.4322"
@@ -644,7 +644,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9053.26897, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9070.19958, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -1422,7 +1422,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.11.1"
         "ProductCode" = "8:{69B9963C-EFAA-4E1C-AD13-25A99888BD7F}"
-        "PackageCode" = "8:{5DE84552-F71A-4AEC-B429-25398148AF15}"
+        "PackageCode" = "8:{D5EC479B-29AF-43BF-83EE-C4BF57E899BE}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
