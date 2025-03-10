@@ -34,12 +34,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0E6B7835DCA141FFAF1DC9F13D14411C"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_132403AD0E084C9D861016B4C088576A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -65,12 +59,6 @@
         "Entry"
         {
         "MsmKey" = "8:_2E3E23A664F849FC8EF6983B88FA77E3"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_31A48AD241FA4EB9B38BD4ACEDF5BB45"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -119,12 +107,6 @@
         "Entry"
         {
         "MsmKey" = "8:_5D153CB81E22499EBD8FCA876E308318"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5EDC1CBCD8C34DC7989D51B2FA3A3F68"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -214,6 +196,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D15C0214BAA54BE78CA3F7829AD06904"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D4AF9008B29140CB87D891AB0BDADFC3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -250,19 +238,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EEC2768B40D34E9098E8761E35B83111"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F758277880CA44D7AFB5E5586FF7DEA6"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FC8FFDC706E54C3EAD2960A7BEC16FCB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -486,26 +462,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0E6B7835DCA141FFAF1DC9F13D14411C"
-            {
-            "SourcePath" = "8:..\\db\\ref_fvscommands.mdb"
-            "TargetName" = "8:ref_fvscommands.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_132403AD0E084C9D861016B4C088576A"
             {
             "SourcePath" = "8:..\\Help\\DATABASE_Help.xps"
@@ -586,26 +542,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_31A48AD241FA4EB9B38BD4ACEDF5BB45"
-            {
-            "SourcePath" = "8:..\\db\\print_report_wizard_user_select.xsd"
-            "TargetName" = "8:print_report_wizard_user_select.xsd"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_38BA4C5075214C1ABD9A38D87791DC15"
             {
             "SourcePath" = "8:..\\db\\treesample.accdb"
@@ -650,7 +586,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9168.26392, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9200.25758, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -772,26 +708,6 @@
             {
             "SourcePath" = "8:..\\db\\biosum_ref.db"
             "TargetName" = "8:biosum_ref.db"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5EDC1CBCD8C34DC7989D51B2FA3A3F68"
-            {
-            "SourcePath" = "8:..\\db\\print_report_wizard_detail_summary.xsd"
-            "TargetName" = "8:print_report_wizard_detail_summary.xsd"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
@@ -1110,6 +1026,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D15C0214BAA54BE78CA3F7829AD06904"
+            {
+            "SourcePath" = "8:..\\db\\ref_master.db"
+            "TargetName" = "8:ref_master.db"
+            "Tag" = "8:"
+            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D4AF9008B29140CB87D891AB0BDADFC3"
             {
             "SourcePath" = "8:..\\scripts\\BioSum_Keywords.kcp"
@@ -1221,52 +1157,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EEC2768B40D34E9098E8761E35B83111"
-            {
-            "SourcePath" = "8:..\\db\\FVSIn.accdb"
-            "TargetName" = "8:FVSIn.accdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F758277880CA44D7AFB5E5586FF7DEA6"
             {
             "SourcePath" = "8:..\\Help\\Help.xml"
             "TargetName" = "8:Help.xml"
             "Tag" = "8:"
             "Folder" = "8:_A54E8310A5084C5DB8398B22E65D8183"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC8FFDC706E54C3EAD2960A7BEC16FCB"
-            {
-            "SourcePath" = "8:..\\db\\scenario.mdb"
-            "TargetName" = "8:scenario.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1448,7 +1344,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.11.2"
         "ProductCode" = "8:{B01045C5-3F94-420B-A443-8917DB4D0C4D}"
-        "PackageCode" = "8:{6DB21F85-CB83-431A-A2A3-9B6D5119ACC3}"
+        "PackageCode" = "8:{79F7D5B1-F6E4-4C74-8F1A-2E4289B7C4EF}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
