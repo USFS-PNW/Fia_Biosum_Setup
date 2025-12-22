@@ -88,6 +88,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_4AA7517F6E3C4EBA8CC815DFDDE7CD3A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4C7D7A7FFF52AB07977BB701850179CF"
         "OwnerKey" = "8:_26D01A262D1B45E5BF2D87172A6E1686"
         "MsmSig" = "8:_UNDEFINED"
@@ -95,6 +101,12 @@
         "Entry"
         {
         "MsmKey" = "8:_5D153CB81E22499EBD8FCA876E308318"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_65F6B6E78F46418DB52507BC65A9754A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -125,6 +137,12 @@
         "Entry"
         {
         "MsmKey" = "8:_90C36F6CBFDB443CB1E349C2C34A6EAF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9A59BC4133244079B1BC68F0016F789B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -528,7 +546,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9483.25854, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9483.25955, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -615,6 +633,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4AA7517F6E3C4EBA8CC815DFDDE7CD3A"
+            {
+            "SourcePath" = "8:..\\tvbc\\tvbc_tree_data.db"
+            "TargetName" = "8:tvbc_tree_data.db"
+            "Tag" = "8:"
+            "Folder" = "8:_0FC2DC67815A42578ABB4A87DD4C5887"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4C7D7A7FFF52AB07977BB701850179CF"
             {
             "AssemblyRegister" = "3:1"
@@ -652,6 +690,26 @@
             "TargetName" = "8:biosum_ref.db"
             "Tag" = "8:"
             "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_65F6B6E78F46418DB52507BC65A9754A"
+            {
+            "SourcePath" = "8:..\\tvbc\\tvbc_tree_calc.bat"
+            "TargetName" = "8:tvbc_tree_calc.bat"
+            "Tag" = "8:"
+            "Folder" = "8:_0FC2DC67815A42578ABB4A87DD4C5887"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -763,6 +821,26 @@
             "TargetName" = "8:SQLite.Interop.dll"
             "Tag" = "8:"
             "Folder" = "8:_98DFC188DB734DAE8D1FBBFDB213FA6D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9A59BC4133244079B1BC68F0016F789B"
+            {
+            "SourcePath" = "8:..\\tvbc\\FIA_TreeVBC.jar"
+            "TargetName" = "8:FIA_TreeVBC.jar"
+            "Tag" = "8:"
+            "Folder" = "8:_0FC2DC67815A42578ABB4A87DD4C5887"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1126,6 +1204,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_0FC2DC67815A42578ABB4A87DD4C5887"
+                    {
+                    "Name" = "8:tvbc"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_51D514A054BF47739853AB84F6BD8BAA"
+                        "Folders"
+                        {
+                        }
+                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_1260A41B4EFE451791D9568A676E24BC"
                     {
                     "Name" = "8:fcs"
