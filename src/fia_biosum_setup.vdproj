@@ -28,12 +28,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0C08A43EF78E40EEAED08E3D1B3733C0"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_132403AD0E084C9D861016B4C088576A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -143,12 +137,6 @@
         "Entry"
         {
         "MsmKey" = "8:_9A59BC4133244079B1BC68F0016F789B"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9A89E230A16948A6BF0347F5DBCB6521"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -442,26 +430,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0C08A43EF78E40EEAED08E3D1B3733C0"
-            {
-            "SourcePath" = "8:..\\db\\shared_project_links_and_notes.mdb"
-            "TargetName" = "8:shared_project_links_and_notes.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_132403AD0E084C9D861016B4C088576A"
             {
             "SourcePath" = "8:..\\Help\\DATABASE_Help.xps"
@@ -546,7 +514,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9483.25955, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9539.19778, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -841,26 +809,6 @@
             "TargetName" = "8:FIA_TreeVBC.jar"
             "Tag" = "8:"
             "Folder" = "8:_0FC2DC67815A42578ABB4A87DD4C5887"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9A89E230A16948A6BF0347F5DBCB6521"
-            {
-            "SourcePath" = "8:..\\db\\personal_project_links_and_notes.mdb"
-            "TargetName" = "8:personal_project_links_and_notes.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_3670DE1FD8814768B37B4FDBC036E358"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1355,7 +1303,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FIA Biosum 5.12.0"
         "ProductCode" = "8:{F2995920-40FD-49A2-A19B-E7A86D3F4D11}"
-        "PackageCode" = "8:{17A5554F-7C27-44A6-8150-D168BBE482C6}"
+        "PackageCode" = "8:{1B008511-95AB-412C-A357-EF9A22F43A78}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
