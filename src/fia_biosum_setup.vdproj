@@ -286,7 +286,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5120.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5121.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -1207,17 +1207,6 @@
                         {
                         }
                     }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_6F9C3DB9C7F0459EBD4BD2753160253F"
-                    {
-                    "Name" = "8:ttc"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_E79A6BF4B03D4D05A53D274820FD55FA"
-                        "Folders"
-                        {
-                        }
-                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_7B87EF1966F54727B35FB5617BD77B04"
                     {
                     "Name" = "8:opcost"
@@ -1301,20 +1290,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.12.0"
-        "ProductCode" = "8:{F2995920-40FD-49A2-A19B-E7A86D3F4D11}"
-        "PackageCode" = "8:{1B008511-95AB-412C-A357-EF9A22F43A78}"
+        "ProductName" = "8:FIA Biosum 5.12.1"
+        "ProductCode" = "8:{B1EAE9F4-10FD-40E4-A132-051CDBB1F576}"
+        "PackageCode" = "8:{8ABBE168-D5A4-4D47-99E6-9A528301068F}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.12.0"
+        "ProductVersion" = "8:5.12.1"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:503-386-5669"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.11.2"
+        "Title" = "8:FIA Biosum Setup 5.12.1"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Lesley Bross and Larry Potts"
         "Keywords" = "8:"
@@ -1425,7 +1414,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.12.0"
+            "Name" = "8:FIA Biosum Manager 5.12.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1439,7 +1428,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.12.0"
+            "Name" = "8:FIA Biosum Manager 5.12.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
