@@ -23,8 +23,6 @@ When the version number is changed, it needs to be changed in the following file
 6. USFS-PNW/Fia-Biosum-Manager src\frmMain g_strAppVer variable (Note: this also updates version in frmAbout)
 7. USFS-PNW/Fia-Biosum-Manager src\version_control.cs PerformVersionCheck function to show 
    which database versions are compatible with the new application version
-8. biosum_ref.accdb is maintained in Box because it exceeds the GitHub maximum file size: BioSumBox / Development / BioSumRef
-9. Always place a current copy of this file in USFS-PNW/Fia_Biosum_Setup/db so that the build can find it
-10. If biosum_ref.accdb is updated, REF_VERSION.version_num needs to be incremented
-11. USFS-PNW/Fia-Biosum-Manager src\frmMain g_intRefDbVer variable needs to match REF_VERSION.version_num
-12: Sign the .msi if it is for wide distribution
+8. If biosum_ref.db is updated, REF_VERSION.version_num needs to be incremented
+9. USFS-PNW/Fia-Biosum-Manager src\frmMain g_intRefDbVer variable needs to match REF_VERSION.version_num
+10: Sign the .msi if it is for wide distribution
