@@ -195,8 +195,8 @@ m[m == "NaN"] <- NA #convert "NaN" values to NA
 
 
 #Calculate distBetweenTrees (feet) across all size classes
-m$distBetweenTrees <- (sqrt((43560/(m$Small.log.trees.per.acre+ m$Large.log.trees.per.acre+ m$Chip.tree.per.acre))/pi))*2 
-m$distBetweenTrees[m$Large.log.trees.per.acre == 0 & m$Small.log.trees.per.acre == 0 &  m$Chip.tree.per.acre == 0] <- NA
+m$distBetweenTrees <- (sqrt((43560/(m$ChipTPA+ m$SmallLogTPA+ m$LargeLogTPA))/pi))*2 
+m$distBetweenTrees[m$LargeLogTPA == 0 & m$SmallLogTPA == 0 &  m$ChipTPA == 0] <- NA
 
 
 # Set all NAs in data frame to 0
