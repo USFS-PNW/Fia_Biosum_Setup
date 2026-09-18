@@ -16,12 +16,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_032DD92334434650BF12946E8484A9C1"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_06CCB5FA2AA44B7B91E9999EE0A5B2EF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -89,6 +83,12 @@
         "Entry"
         {
         "MsmKey" = "8:_4AA7517F6E3C4EBA8CC815DFDDE7CD3A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4B88EA3DB218430EA0F64FDAF3A3EA8E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -274,7 +274,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5130.msi"
+        "OutputFilename" = "8:Debug\\fia_biosum_setup_vBeta5131.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -367,26 +367,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_032DD92334434650BF12946E8484A9C1"
-            {
-            "SourcePath" = "8:..\\opcost\\Opcost_10_1_7.R"
-            "TargetName" = "8:Opcost_10_1_7.R"
-            "Tag" = "8:"
-            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_06CCB5FA2AA44B7B91E9999EE0A5B2EF"
             {
             "SourcePath" = "8:..\\fcs\\BiosumComps.jar"
@@ -522,7 +502,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9685.25995, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ProgressBarEx, Version=1.0.9755.18937, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_3D445E444880EA04FCA6AD82988880ED"
@@ -615,6 +595,26 @@
             "TargetName" = "8:tvbc_tree_data.db"
             "Tag" = "8:"
             "Folder" = "8:_0FC2DC67815A42578ABB4A87DD4C5887"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4B88EA3DB218430EA0F64FDAF3A3EA8E"
+            {
+            "SourcePath" = "8:..\\opcost\\Opcost_10_2.R"
+            "TargetName" = "8:Opcost_10_2.R"
+            "Tag" = "8:"
+            "Folder" = "8:_7B87EF1966F54727B35FB5617BD77B04"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1247,20 +1247,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FIA Biosum 5.13.0"
-        "ProductCode" = "8:{9B6BFCF6-FAC4-481C-8252-C407072F6B41}"
-        "PackageCode" = "8:{E8735E29-D381-4139-B157-2F2DED1BC1C1}"
+        "ProductName" = "8:FIA Biosum 5.13.1"
+        "ProductCode" = "8:{25FA7E4F-DE69-4ABB-8515-FFB5BFAD890D}"
+        "PackageCode" = "8:{D39750E5-6469-41F7-82EB-B937E15BC937}"
         "UpgradeCode" = "8:{4B444F38-410D-42D8-9A53-C48446DB5180}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.13.0"
+        "ProductVersion" = "8:5.13.1"
         "Manufacturer" = "8:FIA PNW Portland Forestry Sciences Lab"
         "ARPHELPTELEPHONE" = "8:503-386-5669"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FIA Biosum Setup 5.13.0"
+        "Title" = "8:FIA Biosum Setup 5.13.1"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Lesley Bross, Larry Potts, and Drue Lindstrom"
         "Keywords" = "8:"
@@ -1371,7 +1371,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11C51438657745FFAC56A65A7E20CEA7"
             {
-            "Name" = "8:FIA Biosum Manager 5.13.0"
+            "Name" = "8:FIA Biosum Manager 5.13.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1385,7 +1385,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCB456D4E91B45E8A0ABBDB7102F8E8B"
             {
-            "Name" = "8:FIA Biosum Manager 5.13.0"
+            "Name" = "8:FIA Biosum Manager 5.13.1"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
