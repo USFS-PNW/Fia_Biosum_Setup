@@ -61,11 +61,12 @@ require(RSQLite)
 ###################### STAND ALONE PATH DIRECTORIES ################################
 #These will be used if no pathways are provided from the command line (args string length = 0)
 
-opcost.ref <- "C:/Users/DanielSwann/Box/BioSumBox/Development/OpCost2018/2026_update/R_and_DB_changes/opcost_ref_DSedits.db" #set the location of the opcost_ref.db you'd like to use
-opcost.input <- "C:/Users/DanielSwann/Box/BioSumBox/Development/OpCost2018/2026_update/R_and_DB_changes/CR_P001_20260121_1110_10_1_6.db" #input database
+opcost.ref <- "C:/Users/DanielSwann/Documents/CarbonProject/BioSum/Testing/4FRI_biohubs_testing/db/opcost_ref.db" #set the location of the opcost_ref.db you'd like to use
+opcost.input <- "C:/Users/DanielSwann/Documents/CarbonProject/BioSum/Testing/4FRI_biohubs_testing/OPCOST/Input/CR_P001_20260922_1013_10_2.db" #input database
 
 ###set the output location database
 opcost.output <- "C:/Users/DanielSwann/Box/BioSumBox/Development/OpCost2018/2026_update/R_and_DB_changes/CR_P001_20260121_1110_10_1_6_output.db"
+
 
 ###set output for the graphs (optional)
 #graph.output <- "C:/Users/SebastianBusby/Desktop/OpCost Update SQLite/graph/"
@@ -551,24 +552,24 @@ estimate_cost <- function(harvest_system, data, cost) {
 calculate_costs_for_input <- function(data) {
   
   #data <- m
-  unique.harvesting.systems <- unique(data$Harvesting.System)
+  unique.harvesting.systems <- unique(data$HarvestingSystem)
   unique.harvesting.systems <- unique.harvesting.systems[!is.na(unique.harvesting.systems)]
   
   mylist <- vector(mode="list", length=length(unique.harvesting.systems))
   droplist <- vector(mode="list", length=length(unique.harvesting.systems))
   
   for(i in 1:length(unique.harvesting.systems)) {
-    system <- data[data$Harvesting.System == unique.harvesting.systems[i],]
+    system <- data[data$HarvestingSystem == unique.harvesting.systems[i],]
     system2 <- suppressWarnings(estimate_cost(unique.harvesting.systems[i], system))
     mylist[[i]] <- system2[[1]]
     droplist[[i]] <- system2[[2]]
   }
   
   data2 <- Reduce(rbind, mylist)
-  data2 <- merge(data2, data[, c("Stand", "Harvesting.System")], by="Stand")
+  data2 <- merge(data2, data[, c("Stand", "HarvestingSystem")], by="Stand")
   
   drop <- Reduce(rbind, droplist)
-  drop <- merge(drop, data[, c("Stand", "Harvesting.System", "RxCycle", "RxPackage", "Rx", "biosum_cond_id")], by="Stand")
+  drop <- merge(drop, data[, c("Stand", "HarvestingSystem", "RxCycle", "RxPackage", "Rx", "biosum_cond_id")], by="Stand")
   
   return(list(data2, drop))
 }
@@ -589,7 +590,7 @@ opcost_output <- data.frame("stand" = output$Stand,
                             "harvest_cpa" = output$Total_CPA, 
                             "chip_cpa" = output$Chipper_CPA, 
                             "assumed_movein_cpa" = output$Total.Move.In.Cost,
-                            "harvest_system" = output$Harvesting.System, 
+                            "harvest_system" = output$HarvestingSystem, 
                             "RxPackage_Rx_RxCycle" = substr(output$Stand, 26, 32), 
                             "biosum_cond_id" = substr(output$Stand, 1, 25),
                             "RxPackage" = substr(output$Stand, 26, 28), 
@@ -597,7 +598,7 @@ opcost_output <- data.frame("stand" = output$Stand,
                             "RxCycle" = substr(output$Stand, 32, 32))
 
 opcost_errors <- data.frame("stand" = drop$Stand, 
-                            "harvest_system" = drop$Harvesting.System,
+                            "harvest_system" = drop$HarvestingSystem,
                             "error_message" = drop$error,
                             "biosum_cond_id" = drop$biosum_cond_id, 
                             "RxPackage" = drop$RxPackage, 
