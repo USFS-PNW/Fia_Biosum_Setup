@@ -61,12 +61,11 @@ require(RSQLite)
 ###################### STAND ALONE PATH DIRECTORIES ################################
 #These will be used if no pathways are provided from the command line (args string length = 0)
 
-opcost.ref <- "C:/Users/DanielSwann/Documents/CarbonProject/BioSum/Testing/4FRI_biohubs_testing/db/opcost_ref.db" #set the location of the opcost_ref.db you'd like to use
-opcost.input <- "C:/Users/DanielSwann/Documents/CarbonProject/BioSum/Testing/4FRI_biohubs_testing/OPCOST/Input/CR_P001_20260922_1013_10_2.db" #input database
+opcost.ref <- "C:/Users/DanielSwann/Box/BioSumBox/Development/OpCost2018/2026_update/R_and_DB_changes/opcost_ref_DSedits.db" #set the location of the opcost_ref.db you'd like to use
+opcost.input <- "C:/Users/DanielSwann/Box/BioSumBox/Development/OpCost2018/2026_update/R_and_DB_changes/CR_P001_20260121_1110_10_1_6.db" #input database
 
 ###set the output location database
 opcost.output <- "C:/Users/DanielSwann/Box/BioSumBox/Development/OpCost2018/2026_update/R_and_DB_changes/CR_P001_20260121_1110_10_1_6_output.db"
-
 
 ###set output for the graphs (optional)
 #graph.output <- "C:/Users/SebastianBusby/Desktop/OpCost Update SQLite/graph/"
@@ -466,7 +465,7 @@ estimate_cost <- function(harvest_system, data, cost) {
   costestimate[is.na(costestimate)] <- 0
   
   #pull in lowboy calculation parameters
-  pattern <- c("Stand", "Move_In_Hours", "Harvest_area_assumed_acres", "Percent.Slope")
+  pattern <- c("Stand", "Move_In_Hours", "Harvest_area", "PercentSlope")
   lowboy.data <- data[,c(which(grepl(paste0(pattern, collapse = "|"),names(data))))]#changed data to m
   
   costestimate <- merge(costestimate, lowboy.data, by = "Stand")
@@ -482,7 +481,7 @@ estimate_cost <- function(harvest_system, data, cost) {
     }
     
     #calculate harvest cost _cpa for each machine
-    Percent.Slope <- costestimate$Percent.Slope
+    PercentSlope <- costestimate$PercentSlope
     costestimate[,ncol(costestimate) + 1] <- costestimate[system_HPA_col] * eval(parse(text=paste0(harvest.cost$Cost[j])))
     names(costestimate)[ncol(costestimate)] <- paste0(harvest.cost$Machine[j], "_CPA")
     
@@ -492,7 +491,7 @@ estimate_cost <- function(harvest_system, data, cost) {
     cph.col.name <- names(costestimate)[ncol(costestimate)] 
     
     #calculate set up move in costs
-    Harvest_area_assumed_acres <- costestimate$Harvest_area_assumed_acres
+    Harvest_area <- costestimate$Harvest_area
     costestimate[,ncol(costestimate) + 1] <- eval(parse(text = paste0(harvest.cost$MoveInCostMultiplier[j])))
     mic.col.name <- paste0(harvest.cost$Machine[j], "_MIC.Multiplier")
     names(costestimate)[ncol(costestimate)] <- as.character(mic.col.name)
