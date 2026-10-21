@@ -24,5 +24,5 @@ When the version number is changed, it needs to be changed in the following file
 7. USFS-PNW/Fia-Biosum-Manager src\version_control.cs PerformVersionCheck function to show 
    which database versions are compatible with the new application version
 8. If biosum_ref.db is updated, REF_VERSION.version_num needs to be incremented
-9. USFS-PNW/Fia-Biosum-Manager src\frmMain g_intRefDbVer variable needs to match REF_VERSION.version_num
+9. USFS-PNW/Fia-Biosum-Manager src\frmMain g_intRefSqliteDbVer variable needs to match REF_VERSION.version_num
 10: Sign the .msi if it is for wide distribution
